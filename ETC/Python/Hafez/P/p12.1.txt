@@ -1,0 +1,77 @@
+
+* PROGRAM LAUNCH *
+
+* CAR EXIT was selected while parking lot was empty!
+
+* PARKING REPORT was selected while there was no customers!
+
+* LOG FILE was selected
+
+
+* CAR ENTRY was selected successfully
+
+ License plate | Entry date | Entry time | Owner
+
+  00A000 IR00  | 2021-03-27 |  17:21:56  | Bache
+  00A000 IR01  | 2021-03-27 |  17:22:07  | Ahgmadofski
+  00A000 IR02  | 2021-03-27 |  17:22:24  | Haji
+  00A000 IR03  | 2021-03-27 |  17:23:14  | Dr. Nin Joon
+  00A000 IR04  | 2021-03-27 |  17:23:27  | Bahare
+  00A000 IR05  | 2021-03-27 |  17:23:43  | Lop Lop
+  00A000 IR06  | 2021-03-27 |  17:24:06  | Shol Mamad
+  00A000 IR07  | 2021-03-27 |  17:24:24  | Maashti Mandali
+  00A000 IR08  | 2021-03-27 |  17:24:32  | Mandes
+  00A000 IR09  | 2021-03-27 |  17:25:26  | Goola
+
+* CAR ENTRY was selected while parking lot was full!
+
+* PARKING REPORT was selected successfully
+
+  There was 0 avalaible spots in the parking lot! (number of cars in the parking lot: 10)
+  Parking lot condition: 10 cars have entered and 0 cars have left the parking lot.
+
+* CAR EXIT was selected successfully
+
+ License plate | Entry date | Entry time | Exit date  | Exit time  | Owner
+
+  00A000 IR00  | 2021-03-27 |  17:21:56  | 2021-03-27 |  17:27:01  | Bache
+  00A000 IR05  | 2021-03-27 |  17:23:43  | 2021-03-27 |  17:27:08  | Lop Lop
+  00A000 IR07  | 2021-03-27 |  17:24:24  | 2021-03-27 |  17:27:11  | Maashti Mandali
+  00A000 IR06  | 2021-03-27 |  17:24:06  | 2021-03-27 |  17:27:15  | Shol Mamad
+  00A000 IR08  | 2021-03-27 |  17:24:32  | 2021-03-27 |  17:27:16  | Mandes
+  00A000 IR04  | 2021-03-27 |  17:23:27  | 2021-03-27 |  17:27:18  | Bahare
+  00A000 IR02  | 2021-03-27 |  17:22:24  | 2021-03-27 |  17:27:20  | Haji
+
+* LOG FILE was selected
+
+  License plate: 00A000 IR00 => Entry: 1   Exit: 1
+  License plate: 00A000 IR01 => Entry: 1   Exit: 0
+  License plate: 00A000 IR02 => Entry: 1   Exit: 1
+  License plate: 00A000 IR03 => Entry: 1   Exit: 0
+  License plate: 00A000 IR04 => Entry: 1   Exit: 1
+  License plate: 00A000 IR05 => Entry: 1   Exit: 1
+  License plate: 00A000 IR06 => Entry: 1   Exit: 1
+  License plate: 00A000 IR07 => Entry: 1   Exit: 1
+  License plate: 00A000 IR08 => Entry: 1   Exit: 1
+  License plate: 00A000 IR09 => Entry: 1   Exit: 0
+
+* PARKING REPORT was selected successfully
+
+  There was 7 avalaible spots in the parking lot! (number of cars in the parking lot: 3)
+  Parking lot condition: 10 cars have entered and 7 cars have left the parking lot.
+
+* LOG FILE was selected
+
+  License plate: 00A000 IR00 => Entry: 1   Exit: 1
+  License plate: 00A000 IR01 => Entry: 1   Exit: 0
+  License plate: 00A000 IR02 => Entry: 1   Exit: 1
+  License plate: 00A000 IR03 => Entry: 1   Exit: 0
+  License plate: 00A000 IR04 => Entry: 1   Exit: 1
+  License plate: 00A000 IR05 => Entry: 1   Exit: 1
+  License plate: 00A000 IR06 => Entry: 1   Exit: 1
+  License plate: 00A000 IR07 => Entry: 1   Exit: 1
+  License plate: 00A000 IR08 => Entry: 1   Exit: 1
+  License plate: 00A000 IR09 => Entry: 1   Exit: 0
+
+* The parking lot was closed!
+
