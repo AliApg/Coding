@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="AliApg">
+
+    <meta name="keywords"
+        content="Design Analyze Manufacture Group, Mecha Projects, Mechaprojects, Internal Combustion, Engine, Simulation, Engine Project, Project, CFD, Avl Fire, Solidworks, Ansys, Abaqus, Engineering Project, Javad Zareei, Amirata Yazdani, Kourosh Ghadamkheir,جواد زارعی, امیرعطا یزدانی, کورش قدم خیر">
+
+    <link rel="preload" href="font/Jura-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/PatrickHand-Regular.ttf" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="img/png" href="img/logo.png">
+
+    <title>Mechaprojects</title>
+</head>
+
+<body>
+    <header class="english">
+        <div class="close"></div>
+        <nav class="main-nav english">
+            <div class="container">
+                <ul class="menu-main english">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#!">Courses</a>
+                        <div class="menu-sub english">
+                            <div class="menu-col-1 cols english">
+                                <h3 class="menu-category">Mechanic</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">SolidWorks</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Abaqus</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Fire</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Boost</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols english">
+                                <h3 class="menu-category">Computer</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Python</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">HTML</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">CSS</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="project_en">Services</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="menu-col-1 cols english">
+                                <h3 class="menu-category">Design</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Industrial design</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Web design</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols english">
+                                <h3 class="menu-category">Analysis</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Static analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Dynamic analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Fluid analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Combustion analysis</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="accomplishments_en">Accomplishments</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Projects</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Published articles</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a  onclick="down()">Contact us</a>
+                        <!--About us-->
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a class="eng" href="team_en" tabindex="-1">Engineering team</a></li>
+                                    <li><a class="eng" href="#foot" tabindex="-1">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="click">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="english">
+        <div id="first" class="opener-pic start">
+            <div class="project english flx">
+                <div class="contain flx">
+                    <div class="carousel flx">
+                        <input onclick="move()" type="radio" id="carousel-1" name="carousel[]" checked>
+                        <input onclick="move()" type="radio" id="carousel-2" name="carousel[]">
+                        <input onclick="move()" type="radio" id="carousel-3" name="carousel[]">
+                        <input onclick="move()" type="radio" id="carousel-4" name="carousel[]">
+                        <!-- <input onclick="move()" type="radio" id="carousel-5" name="carousel[]"> -->
+                        <ul class="carousel__items flx">
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph">&emsp;The engineering team of this group is made up of unique people with multi-faceted potential who, relying on their
+                                experiences, survey all engineering projects from the practical side, so that the completed projects match the industry
+                                and fully practical concepts.</li>
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph">&emsp;Led and executed entirely by engineers from top universities, project teams collaboratively solve complex problems while
+                                providing real-world engineering experience. So that the output results of the completed projects create a completely
+                                practical aspect.</p>
+                            </li>
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph">&emsp;The participation of this team is world class and provides opportunities for industries and students to improve
+                                leadership and professional skills together. Innovation and teamwork have made this group successful.</p>
+                            </li>
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph">&emsp;Adding depth and a multidisciplinary approach, the project teams consist of engineers with different scientific
+                                backgrounds, including all engineering disciplines. Academic consultants provide a dedicated project team, technical and
+                                administrative support for each team and the overall program.</p>
+                            </li>
+                            <!-- <li class="carousel__item">
+                                <p class="carousel__paragraph"></p>
+                            </li> -->
+                        </ul>
+                        <div onclick="move()" class="carousel__prev">
+                            <label class="carousel__btn__holder" for="carousel-1"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-2"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-3"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-4"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <!-- <label class="carousel__btn__holder" for="carousel-5"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label> -->
+                        </div>
+                        <div onclick="move()" class="carousel__next">
+                            <label class="carousel__btn__holder" for="carousel-1"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-2"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-3"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-4"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <!-- <label class="carousel__btn__holder" for="carousel-5"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label> -->
+                        </div>
+                        <div class="carousel__nav">
+                            <label for="carousel-1"></label>
+                            <label for="carousel-2"></label>
+                            <label for="carousel-3"></label>
+                            <label for="carousel-4"></label>
+                            <!-- <label for="carousel-5"></label> -->
+                        </div>
+                    </div>
+                </div>
+                <a class="Prjct" href="project_en">Request project</a>
+                <a id="language" class="english" href="../"></a>
+                <!-- <a class="up-ref" href="#first" tabindex="-1"></a> -->
+                <div id="up">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+        </div>
+        <div class="welcome english">
+            <h1>Mechaprojects engineering group:</h1>
+            <div class="info">
+                <div class="information flx">
+                    <!-- <h3>Paragraph 1</h3> -->
+                    <p>&emsp;Mechaprojects engineering group was established in 2017 with the aim of carrying out industrial projects and supervising
+                    the implementation of engineering projects, especially in the field of mechanical engineering. With several years of
+                    experience, Mechaprojects group is one of the most active, long-standing and influential engineering groups.</p>
+                </div>
+                <div class="information flx">
+                    <!-- <h3>Paragraph 2</h3> -->
+                    <p>&emsp;With the participation and cooperation of various experts and experts in various fields of engineering and with the
+                    management of the unit at Ferdowsi University, it is also providing services in one of the major mechanical engineering
+                    projects based on reducing fuel consumption and optimizing combustion. . The goal of this group is to carry out
+                    engineering projects at the domestic and international level, so that by relying on the strength of its engineers, it
+                    can provide the basis for global growth and comfort.</p>
+                </div>
+                <!-- <div class="information">
+                    <h3>Paragraph 3</h3>
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="description">
+                <div class="describe-pic">
+                    <p class="sub-description english"><i class="title">Computer aided design</i><br>&emsp;
+                    Considering the increasing human need for modeling and troubleshooting the model before construction, it is very
+                    important to use a valid and international tool that has been approved in this field. With a team of students and
+                    graduates of Ferdowsi University of Mashhad, we are ready to carry out projects related to industrial design and drawing
+                    with <i class="sec_font">Solidworks</i> and <i class="sec_font">CATIA</i> software for you.</p>
+                    <img class="images sub-description" src="img/solid.png"
+                        alt="Section view of an engineering piece designed by SolidWorks">
+                </div>
+                <div class="describe-pic">
+                    <img class="images sub-description" src="img/flow.png" alt="An engineering piece analysed by Ansys">
+                    <p class="sub-description english"><i class="title">CFD simulation</i><br>&emsp;
+                    The science of computational fluid dynamics in the last 15 years with the development of related software has become
+                    widespread in the world and has received the attention of industries. With the range of work that exists in these
+                    softwares, it is possible to perform all kinds of fluid simulations, and this collection is ready to accept fluid
+                    projects related to <i class="sec_font">Fluent</i> and <i class="sec_font">STAR CCM</i> softwares.</p>
+                </div>
+                <div class="describe-pic">
+                    <p class="sub-description english"><i class="title">Finite element simulation</i><br>&emsp;
+                    Considering the ever-increasing costs of construction, the high price of raw materials and the optimization of the
+                    structure to the amount of raw materials used, provided that the reliability coefficient does not decrease, engineering
+                    can be very important. <i class="sec_font">Abaqus</i>, which is considered a powerful commercial software in this field, provides the ability to
+                    predict the strength of the mechanical structure against all kinds of loading conditions so that an optimal reliability
+                    factor can be defined for it according to the operating range of the relevant device and the design can be based on it.
+                    The basis of the advance.</p>
+                    <img class="images sub-description" src="img/Abaqus.png"
+                        alt="An engineering piece analysed by ABAQUS">
+                </div>
+                <div class="describe-pic">
+                    <img class="images sub-description" src="img/avl.png"
+                        alt="Section view of an engine rendered by AVL fire">
+                    <p class="sub-description english"><i class="title">Simulation of automotive systems</i><br>&emsp;
+                    <i class="sec_font">AVL Suite</i> software is a very powerful software in the field of simulating propulsion systems, power train, emission
+                    control and thermal management in all types of combustion, hybrid and electric vehicles. This academic complex is ready
+                    to carry out projects related to education or simulation with <i class="sec_font">AVL Fire</i> and <i class="sec_font">AVL CruiseM</i> software.</p>
+                </div>
+                <!-- <div class="describe-pic">
+                    <p class="sub-description english">&emsp;</p>
+                    <img class="images sub-description" src="img/Python.png" alt="Python programming language icon">
+                </div>
+                <div class="describe-pic">
+                    <img class="images sub-description" src="img/Web.png" alt="Web development picture">
+                    <p class="sub-description english">&emsp;</p>
+                </div>
+                <div class="describe-pic">
+                    <p class="sub-description english">&emsp;</p>
+                    <img class="images sub-description" src="img/Article.png" alt="Article writing">
+                </div> -->
+            </div>
+        </div>
+        <footer id="foot" class="english">
+            <div class="about-us">
+                <div class="contact-us english">
+                    <h4>Contact us</h4>
+                    <ul">
+                        <li class="contact">Address: Iran, Mashhad, Azadi square, Ferdowsi University of Mashhad</li>
+                        <li class="contact">Email: sup.mechap@gmail.com</li>
+                        <li class="contact">Office: (+98) 0912 723 5978</li>
+                        </ul>
+                </div>
+                <div class="socials">
+                    <h4>Socials</h4>
+                    <ul class="icons">
+                        <li class="socials-icons"><a class="icon-focus" href="https://www.linkedin.com/company/mechaprojects7822/about/" target="__blank"><i
+                                    class="fab fa-linkedin icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-telegram-plane icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-whatsapp icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-github icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-researchgate icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-twitter icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-facebook-square icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-instagram icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-skype icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-youtube icons-hover"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <span>Copyright &copy; All Rights Reserved for this Company.</span>
+            </div>
+        </footer>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

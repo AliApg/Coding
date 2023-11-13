@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="AliApg">
+
+    <meta name="keywords"
+        content="Design Analyze Manufacture Group, Alpha, Alpha Projects, Javad Zareei, Amirata Yazdani, Kourosh Ghadamkheir,جواد زارعی, امیرعطا یزدانی, کورش قدم خیر">
+
+    <link rel="preload" href="font/Jura-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/PatrickHand-Regular.ttf" as="font" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" type="img/png" href="img/logo.png">
+
+    <title>Engineering team</title>
+</head>
+
+<body>
+    <header class="english">
+        <div class="close"></div>
+        <nav class="main-nav english">
+            <div class="container">
+                <ul class="menu-main english">
+                    <li>
+                        <a href="index_en">Home</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#!">Courses</a>
+                        <div class="menu-sub english">
+                            <div class="menu-col-1 cols english">
+                                <h3 class="menu-category">Mechanic</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">SolidWorks</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Abaqus</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Fire</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Boost</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols english">
+                                <h3 class="menu-category">Computer</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Python</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">HTML</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">CSS</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="#!">Services</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="menu-col-1 cols english">
+                                <h3 class="menu-category">Design</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Industrial design</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Web design</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols english">
+                                <h3 class="menu-category">Analysis</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Static analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Dynamic analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Fluid analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Combustion analysis</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="#!">Accomplishments</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Projects</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Published articles</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="#foot">About us</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a class="eng" href="team_en" tabindex="-1">Engineering team</a></li>
+                                    <li><a class="eng" href="#foot" tabindex="-1">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="click">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="english team">
+        <div id="first" class="opener-pic">
+            <div class="project english">
+                <a id="language" class="english" href="team"></a>
+                <a class="up-ref" href="#first" tabindex="-1"></a>
+                <div id="up">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+            <h1 class="start english">Engineering team of D.A.M group</h1>
+            <div class="dr">
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__front">
+                            <img class="card__pic" src="img/jz.jpg" alt="Picture of Javad Zareei">
+                            <hr>
+                            <h3 class="card__title">CEO</h3>
+                            <span class="card__front__one"></span>
+                            </div>
+                        <div class="card__back">
+                            <span class="card__back__one"></span>
+                            <p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+                            <ul class="icons team">
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-linkedin icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-telegram-plane icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-whatsapp icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-github icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-researchgate icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-twitter icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-facebook-square icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-instagram icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-skype icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-youtube icons-hover"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="us">
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__front">
+                            <div class="card__front__one"></div>
+                            <img class="card__pic" src="img/af.jpg" alt="Picture of Alireza Farkhondeh">
+                            <hr>
+                            <h3 class="card__title">COO</h3>
+                            </div>
+                        <div class="card__back">
+                            <span class="card__back__one"></span>
+                            <p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+                            <ul class="icons team">
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-linkedin icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-telegram-plane icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-whatsapp icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-github icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-researchgate icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-twitter icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-facebook-square icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-instagram icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-skype icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-youtube icons-hover"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__front">
+                            <div class="card__front__one"></div>
+                            <img class="card__pic" src="img/kg.jpg" alt="Picture of Kourosh Ghadamkheir">
+                            <hr>
+                            <h3 class="card__title">COO</h3>
+                            </div>
+                        <div class="card__back">
+                            <span class="card__back__one"></span>
+                            <p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+                            <ul class="icons team">
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-linkedin icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-telegram-plane icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-whatsapp icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-github icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-researchgate icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-twitter icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-facebook-square icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-instagram icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-skype icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-youtube icons-hover"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__content">
+                        <div class="card__front">
+                            <div class="card__front__one"></div>
+                            <img class="card__pic" src="img/ay.jpg" alt="Picture of Amirata Yazdani">
+                            <hr>
+                            <h3 class="card__title">COO</h3>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__back__one"></span>
+                            <p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+                            <ul class="icons team">
+                                <li class="socials-icons"><a href="https://www.linkedin.com/in/amirata-yazdani/" target="__blank"><i class="fab fa-linkedin icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="https://github.com/AliApg" target="__blank"><i class="fab fa-github icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="https://www.researchgate.net/profile/Amirata-Yazdani" target="__blank"><i class="fab fa-researchgate icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="https://twitter.com/A1iApg" target="__blank"><i class="fab fa-twitter icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-facebook-square icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-instagram icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-skype icons-hover"></i></a></li>
+                                <li class="socials-icons"><a href="#" target="__blank"><i class="fab fa-youtube icons-hover"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="foot" class="english">
+            <div class="about-us">
+                <div class="contact-us english">
+                    <h4>Contact us</h4>
+                    <ul">
+                        <li class="contact">Address: Iran, Mashhad, Azadi square, Ferdowsi University of Mashhad</li>
+                        <li class="contact">Email: gbzgw@hi2.in</li>
+                        <li class="contact">Office: 09150000000</li>
+                        </ul>
+                </div>
+                <div class="socials">
+                    <h4>Socials</h4>
+                    <ul class="icons">
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-linkedin icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-telegram-plane icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-whatsapp icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-github icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-researchgate icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-twitter icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-facebook-square icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-instagram icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-skype icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i class="fab fa-youtube icons-hover"></i></a></li>
+                    </ul> </div>
+            </div>
+            <div>
+                <span>Copyright &copy; All Rights Reserved for this Company.</span>
+            </div>
+        </footer>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

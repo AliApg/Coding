@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="AliApg">
+
+    <meta name="keywords"
+        content="Design Analyze Manufacture Group, Alpha, Alpha Projects, Javad Zareei, Amirata Yazdani, Kourosh Ghadamkheir,جواد زارعی, امیرعطا یزدانی, کورش قدم خیر">
+
+    <link rel="preload" href="font/NotoNastaliqUrdu-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/BNaznnBd.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/persian-badkhat.ttf" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="img/png" href="img/logo.png">
+
+    <title>Mechaprojects</title>
+</head>
+
+<body class="carousel__page">
+    <header>
+        <div class="close"></div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="menu-main">
+                    <li>
+                        <a href="">صفحه اصلی</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#!">دوره ها</a>
+                        <div class="menu-sub">
+                            <div class="menu-col-1 cols">
+                                <h3 class="menu-category">مکانیک</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">SolidWorks</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Abaqus</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Fire</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Boost</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols">
+                                <h3 class="menu-category">کامپیوتر</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Python</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">HTML</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">CSS</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="project">سفارش پروژه</a>
+                        <!-- <div class="menu-sub">
+                            <div class="menu-col-1 cols" tabindex="-1">
+                                <h3 class="menu-category" tabindex="-1">طراحی</h3>
+                                <hr>
+                                <ul>
+                                    <li><a href="#" tabindex="-1">طراحی صنعتی</a></li>
+                                    <li><a href="#" tabindex="-1">طراحی سایت</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols">
+                                <h3 class="menu-category">تحلیل</h3>
+                                <hr>
+                                <ul>
+                                    <li><a href="#" tabindex="-1">تحلیل استاتیکی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل دینامیکی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل سیالاتی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل احتراق</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="accomplishments">دستاورد ها</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a href="#" tabindex="-1">پروژه های انجام شده</a></li>
+                                    <li><a href="#" tabindex="-1">مقالات چاپ شده</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a onclick="down()">ارتباط با ما</a>
+                        <!--درباره ما-->
+                        <!-- <div class="menu-sub">
+                            <div class="no-padding cols menu-col-1">
+                                <ul>
+                                    <li><a href="team" tabindex="-1">تیم مهندسان</a></li>
+                                    <li><a href="#foot" tabindex="-1">ارتباط با ما</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="click">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="opener-pic start">
+            <div class="project flx">
+                <div class="contain flx">
+                    <div class="carousel flx">
+                        <input onclick="move()" type="radio" id="carousel-1" name="carousel[]" checked>
+                        <input onclick="move()" type="radio" id="carousel-2" name="carousel[]">
+                        <input onclick="move()" type="radio" id="carousel-3" name="carousel[]">
+                        <input onclick="move()" type="radio" id="carousel-4" name="carousel[]">
+                        <!-- <input onclick="move()" type="radio" id="carousel-5" name="carousel[]"> -->
+                        <ul class="carousel__items flx">
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph RTL">&emsp;تیم مهندسی اين گروه برگرفته از افراد منحصر به فرد و داراي پتانسيل چند وجهي است كه با تكيه بر تجارب خود تمامي پروژهاي
+                                مهندسي را از بعد عملي پيمايش مي كنند، به صورتيكه پروژه هاي انجام شده با صنعت و مفاهيم كاملا كاربردي مطابقت نمايد.</p>
+                            </li>
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph RTL">&emsp;تیم های پروژه که به طور کامل توسط مهندسان دانشگاه هاي برتر رهبری و اجرا می شوند، به طور مشترک مشکلات پیچیده را حل می
+                                کنند و در عین حال تجربه مهندسی در دنیای واقعی را ارائه مي دهند. به طوري كه نتايج خروجي پروژه هاي انجام شده جنبه كاملا كاربردي ايجاد می نمايند.</p>
+                            </li>
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph RTL">&emsp;مشارکت این تیم در کلاس جهانی است و فرصت هایی را برای صنايع و دانشجويان فراهم می کند تا در کنار همديگر مهارت های رهبری
+                                و حرفه ای را ارتقا دهند. نوآوری و کار تیمی باعث موفقیت این گروه شده است.</p>
+                            </li>
+                            <li class="carousel__item">
+                                <p class="carousel__paragraph RTL">&emsp;با افزودن عمق و یک رویکرد چند رشته ای، تیم های پروژه متشکل از مهندسين با پیشینه های علمی مختلف از جمله تمام رشته های
+                                مهندسی مي باشد. مشاوران دانشگاهي، یک تیم اختصاصی پروژه، پشتیبانی فنی و اداری را برای هر تیم و برنامه کلی
+                                ارائه می کنند.</p>
+                            </li>
+                            <!-- <li class="carousel__item">
+                                <p class="carousel__paragraph RTL"></p>
+                            </li> -->
+                        </ul>
+                        <div onclick="move()" class="carousel__prev">
+                            <label class="carousel__btn__holder" for="carousel-1"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-2"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-3"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-4"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <!-- <label class="carousel__btn__holder" for="carousel-5"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label> -->
+                        </div>
+                        <div onclick="move()" class="carousel__next">
+                            <label class="carousel__btn__holder" for="carousel-1"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-2"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-3"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <label class="carousel__btn__holder" for="carousel-4"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label>
+                            <!-- <label class="carousel__btn__holder" for="carousel-5"><i
+                                    class="flx carousel__btn fas fa-angle-up"></i></label> -->
+                        </div>
+                        <div class="carousel__nav">
+                            <label for="carousel-1"></label>
+                            <label for="carousel-2"></label>
+                            <label for="carousel-3"></label>
+                            <label for="carousel-4"></label>
+                            <!-- <label for="carousel-5"></label> -->
+                        </div>
+                    </div>
+                </div>
+                <a class="Prjct" href="project">انجام پروژه</a>
+                <a id="language" href="home_en"></a>
+                <!-- <a class="up-ref" href="#first" tabindex="-1"></a> -->
+                <div id="up">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+        </div>
+        <div class="welcome">
+            <h1>گروه فنی مهندسی&nbsp; <i class="sec_font">Mechaprojects</i>:</h1>
+            <div class="info">
+                <div class="information flx">
+                    <!-- <h3>پاراگراف 1</h3> -->
+                    <p>&emsp;گروه مهندسي <i class="sec_font">Mechaprojects</i> در سال ۱397 با هدف انجام پروژه هاي صنعتي و
+                        نظارت بر اجرای پروژه هاي مهندسي
+                        خصوصا در زمينه مهندسي
+                        مكانيك تاسیس گردید. با داشتن چندین سال تجربه، گروه <i class="sec_font">Mechaprojects</i> یکی از
+                        فعالترين، پر سابقه ترین و تأثیر
+                        گذارترین گروه هاي
+                        مهندسی می باشد.</p>
+                </div>
+                <div class="information flx">
+                    <!-- <h3>پاراگراف 2</h3> -->
+                    <p>&emsp;با مشارکت و همکاری کارشناسان و متخصصین مختلف در زمینه های مختلف مهندسي و با مدیریت واحد در محل دانشگاه فردوسي و همچنین
+                    در حال انجام يكي از پروژه هاي بزرگ مهندسي مكانيك با تكيه بر كاهش مصرف سوخت و بهينه ساز ي احتراق در حال ارائه خدمات مي
+                    باشد. هدف اين گروه انجام پروژهاي مهندسي در سطح داخلي و بين المللي است تا با تكيه بر توان مهندسان خود بتواند زمينه رشد و
+                    آسايش جهاني را فراهم نمايد.</p>
+                </div>
+            <!--<div class="information">
+                    <h3>پاراگراف 3</h3>
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="description">
+                <div class="describe-pic">
+                    <p class="sub-description"><i class="title">طراحی به کمک رایانه</i><br>&emsp;با توجه به نیاز روز
+                        افزون
+                        بشر به مدل سازی و عیب یابی مدل قبل از ساخت، استفاده از ابزای معتبر و بین المللی که در این زمینه
+                        تایید
+                        شده است بسیار حائز اهمیت می باشد. ما با تیمی متشکل از دانشجویان و فارق التحصیلان دانشگاه فردوسی
+                        مشهد
+                        آماده انجام پروژه های مرتبط با طراحی و نقشه کشی صنعتی با نرم افزار های <i
+                            class="sec_font">Solidworks</i> و <i class="sec_font">CATIA</i> برای شما
+                        بزرگواران می باشیم.</p>
+                    <img class="images sub-description" src="img/solid.png"
+                        alt="Section view of an engineering piece designed by SolidWorks">
+                </div>
+                <div class="describe-pic">
+                    <img class="images sub-description" src="img/flow.png"
+                        alt="An engineering piece analysed by Ansys">
+                    <p class="sub-description"><i class="title">شبیه سازی <i
+                                class="sec_font">CFD</i></i><br>&emsp;علم دینامیک سیالات محاسباتی در 15
+                        سال اخیر با توسعه نرم افزار های مربوطه بسیار در جهان فراگیر و مورد توجه صنایع قرار گرفته است. با
+                        گستره
+                        کاری که در این نرم افزار ها وجود دارد می توان انواع شبیه سازی های سیالاتی را انجام داد، که این
+                        مجموعه آماده پذیرش پروژه های سیالاتی مرتبط با نرم افزار های <i class="sec_font">Fluent</i> و <i
+                            class="sec_font">STAR CCM</i> می باشد.</p>
+                </div>
+                <div class="describe-pic">
+                    <p class="sub-description"><i class="title">شبیه سازی المان محدود</i><br>&emsp;با توجه به هزینه
+                        های روز
+                        افزون ساخت، قیمت بالای مواد اولیه و بهینه سازی سازه به مقدار مواد اولیه مورد استفاده به شرط عدم
+                        افت ضریب اطمینان، مهندسی می تواند بسیار حائز اهمیت باشد. <i class="sec_font">Abaqus</i> که نرم
+                        افزار تجاری قدرتمندی در این زمینه
+                        محسوب می شود،
+                        قابلیت پیش بینی استحکام سازه مکانیکی در برابر انواع شرایط بارگذاری را فراهم نموده تا بتوان با
+                        توجه به
+                        حیطه کارکرد دستگاه
+                        مربوطه، یک ضریب اطمینان بهینه برای آن تعریف کرد و طراحی را بر آن اساس جلو برد.</p>
+                    <img class="images sub-description" src="img/Abaqus.png"
+                        alt="An engineering piece analysed by ABAQUS">
+                </div>
+                <div class="describe-pic">
+                    <img class="images sub-description" src="img/avl.png"
+                        alt="Section view of an engine rendered by AVL fire">
+                    <p class="sub-description"><i class="title">شبیه سازی سیستم های خودرویی</i><br>&emsp;نرم افزار <i
+                            class="sec_font">AVL Suite</i>،
+                        نرم افزاری بسیار قدرتمند در زمینه شبیه سازی سیستم های قوای محرکه، power
+                            train، کنترل آلایندگی و
+                        مدیریت حرارتی در انواع خودرو های احتراقی، هیبریدی و برقی می باشد. این مجموعه دانشگاهی آماده
+                        انجام پروژه
+                        های مرتبط با
+                        آموزش یا شبیه سازی با نرم افزار های <i class="sec_font">AVL Fire</i> و <i class="sec_font">AVL
+                            CruiseM</i> می باشد.</p>
+                </div>
+                <!-- <div class="describe-pic">
+                    <p class="sub-description"></p>
+                    <img class="images sub-description" src="img/Python.png" alt="Python programming language icon">
+                </div>
+                <div class="describe-pic">
+                    <img class="images sub-description" src="img/Web.png" alt="Web development picture">
+                    <p class="sub-description"></p>
+                </div> -->
+                <!-- <div class="describe-pic">
+                    <p class="sub-description"></p>
+                    <img class="images sub-description" src="img/Article.png" alt="Article writing">
+                </div> -->
+            </div>
+        </div>
+        <footer>
+            <div class="about-us">
+                <div class="contact-us">
+                    <h4>ارتباط با ما</h4>
+                    <ul">
+                        <li class="contact">آدرس:&nbsp; مشهد، میدان آزادی، دانشگاه فردوسی مشهد</li>
+                        <li class="contact">ایمیل:&nbsp; <i
+                                style="font-family: myFourthFont-en; font-style: normal;">sup.mechap@gmail.com</i>
+                        </li>
+                        <li class="contact">تلفن تماس:&nbsp; 5978 723 0912</li>
+                        </ul>
+                </div>
+                <div class="socials">
+                    <h4>شبکه های اجتماعی</h4>
+                    <ul class="icons">
+                        <li class="socials-icons"><a class="icon-focus" href="https://www.linkedin.com/company/mechaprojects7822/about/" target="__blank"><i
+                                    class="fab fa-linkedin icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-telegram-plane icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-whatsapp icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-github icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-researchgate icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-twitter icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-facebook-square icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-instagram icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-skype icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" target="__blank"><i
+                                    class="fab fa-youtube icons-hover"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <span>تمامی حقوق براي این شرکت محفوظ می باشد. ©</span>
+            </div>
+        </footer>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

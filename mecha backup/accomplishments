@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="AliApg">
+
+    <meta name="keywords"
+        content="Design Analyze Manufacture Group, Mecha Projects, Mechaprojects, Internal Combustion, Engine, Simulation, Engine Project, Project, CFD, Avl Fire, Solidworks, Ansys, Abaqus, Engineering Project, Javad Zareei, Amirata Yazdani, Kourosh Ghadamkheir,جواد زارعی, امیرعطا یزدانی, کورش قدم خیر">
+
+    <link rel="preload" href="font/NotoNastaliqUrdu-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/BNaznnBd.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/persian-badkhat.ttf" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="img/png" href="img/logo.png">
+
+    <title>دستاورد ها</title>
+</head>
+
+<body>
+    <header>
+        <div class="close"></div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="menu-main">
+                    <li>
+                        <a href="../">صفحه اصلی</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#!">دوره ها</a>
+                        <div class="menu-sub">
+                            <div class="menu-col-1 cols">
+                                <h3 class="menu-category">مکانیک</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">SolidWorks</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Abaqus</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Fire</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Boost</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols">
+                                <h3 class="menu-category">کامپیوتر</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Python</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">HTML</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">CSS</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="project">سفارش پروژه</a>
+                        <!-- <div class="menu-sub">
+                            <div class="menu-col-1 cols" tabindex="-1">
+                                <h3 class="menu-category" tabindex="-1">طراحی</h3>
+                                <hr>
+                                <ul>
+                                    <li><a href="#" tabindex="-1">طراحی صنعتی</a></li>
+                                    <li><a href="#" tabindex="-1">طراحی سایت</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols">
+                                <h3 class="menu-category">تحلیل</h3>
+                                <hr>
+                                <ul>
+                                    <li><a href="#" tabindex="-1">تحلیل استاتیکی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل دینامیکی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل سیالاتی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل احتراق</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="">دستاورد ها</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a href="#" tabindex="-1">پروژه های انجام شده</a></li>
+                                    <li><a href="#" tabindex="-1">مقالات چاپ شده</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a onclick="down()">ارتباط با ما</a>
+                        <!--درباره ما-->
+                        <!-- <div class="menu-sub">
+                            <div class="no-padding cols menu-col-1">
+                                <ul>
+                                    <li><a href="team" tabindex="-1">تیم مهندسان</a></li>
+                                    <li><a href="#foot" tabindex="-1">ارتباط با ما</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="click">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="accomplishments">
+        <div class="opener-pic">
+            <div class="project">
+                <a id="language"  class="start" href="accomplishments_en"></a>
+                <div id="up">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+            <h1 style="direction:rtl">دستاورد های  گروه فنی مهندسی&nbsp; <i  class="sec_font">Mechaprojects</i>:</h1>
+            <div class="accomps">
+                <div class="intro rtl">
+                    <p>&emsp;لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت
+                    می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. </p>
+                </div>
+                <div class="sub-accomps">
+                    <h2 class="accomps-title">مقالات</h2>
+                    <ul class="accomps-list">
+                        <li class="accomps-name"><a href="https://journals.sagepub.com/doi/abs/10.1177/14680874221107141" class="accomps-links" target="__blank">The effects of variable excess air ratio and ignition timing on the performance and exhaust emissions in a direct injection Hydrogen-CNG fueled engine</a></li>
+                        <li class="accomps-name"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0360319922019656" class="accomps-links" target="__blank">The effect of EGR and hydrogen addition to natural gas on performance and exhaust emissions in a diesel engine by AVL fire multi-domain simulation, GPR model, and multi-objective genetic algorithm</a></li>
+                        <li class="accomps-name"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0360544222013482" class="accomps-links" target="__blank">Numerical investigation of hydrogen enriched natural gas effects on different characteristics of a SI engine with modified injection mechanism from port to direct injection</a></li>
+                        <li class="accomps-name"><a href="https://jcarme.sru.ac.ir/article_1601.html" class="accomps-links" target="__blank">Study of the effect of the boundary layer excitation in the nanofluids flow inside the tube on increasing the heat transfer coefficient</a></li>
+                        <li class="accomps-name"><a href="https://profdoc.um.ac.ir/paper-abstract-1087221.html" class="accomps-links" target="__blank">بررسی کاربرد سوخت های گازی (گاز طبیعی، هیدروژن، بیوگاز) بر عملکرد و انتشار آلایندگی موتورهای دیزل</a></li>
+                        <li class="accomps-name"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0360544221012056" class="accomps-links" target="__blank">Numerical investigation of the effect of two-step injection (direct and port injection) of hydrogen blending and natural gas on engine performance and exhaust gas emissions</a></li>
+                        <li class="accomps-name"><a href="http://www.iust.ac.ir/ijae/article-1-559-en.html&sw=Emission" class="accomps-links" target="__blank">A simulation and experimental study of the effect of hydrogen added to diesel fuel on performance and exhaust emissions in diesel engine</a></li>
+                        <li class="accomps-name"><a href="https://agris.fao.org/agris-search/search.do?recordID=IR2021800284" class="accomps-links" target="__blank">The Effect of Compression Ratio and Alternative Fuels on the Performance of Turbocharged Diesel Engine by GT-POWER Software</a></li>
+                        <li class="accomps-name"><a href="https://profdoc.um.ac.ir/paper-abstract-1082703.html" class="accomps-links" target="__blank">مدل‌سازی و بهینه‌سازی پارامترهای عملکردی موتور دیزل دوگانه‌سوز تحت اثر تغییرات زمان پاشش و درصد اختلاط سوخت به کمک شبکه عصبی مصنوعی و الگوریتم ژنتیک چندهدفه</a></li>
+                        <li class="accomps-name"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0360319920334169" class="accomps-links" target="__blank">The effect of hydrogen addition to compressed natural gas on performance and emissions of a DI diesel engine by a numerical study</a></li>
+                        <li class="accomps-name"><a href="https://jsfm.shahroodut.ac.ir/article_1925.html?lang=en" class="accomps-links" target="__blank">Modelling and optimizing effect of start of injection and blend of fuels on dual fuel diesel engine performance parameters by ANN and NSGA II</a></li>
+                        <li class="accomps-name"><a href="http://www.iust.ac.ir/ijae/browse.php?a_code=A-10-333-4&slc_lang=en&sid=1" class="accomps-links" target="__blank">The effect of the turbocharger system and different fuels on the performance and exhaust emissions of a diesel engine by a numerical study</a></li>
+                        <li class="accomps-name"><a href="https://link.springer.com/article/10.1007/s40997-019-00296-x" class="accomps-links" target="__blank">Effect of Ignition Timing and Hydrogen Fraction in Natural Gas Blend on Performance and Exhaust Emissions in a DI Engine</a></li>
+                        <li class="accomps-name"><a href="https://www.cabdirect.org/cabdirect/abstract/20203256563" class="accomps-links" target="__blank">Effect of intercooler and turbocharger on the performance of an operational Ferguson 285 tractor engine</a></li>
+                        <li class="accomps-name"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0360319919342065" class="accomps-links" target="__blank">Optimization and study of performance parameters in an engine fueled with hydrogen</a></li>
+                        <li class="accomps-name"><a href="http://www.iust.ac.ir/ijae/article-1-517-en.html&sw=Fluid+Flow" class="accomps-links" target="__blank">Numerical investigation of the variation of compression ratio on performance and exhaust emission of a turbo-diesel engine</a></li>
+                        <li class="accomps-name"><a href="https://ajme.aut.ac.ir/article_3259.html" class="accomps-links" target="__blank">The Effect of Compression Ratio and Alternative Fuels on Performance and Exhaust Emission in a Diesel Engine by Modelling Engine</a></li>
+                        <li class="accomps-name"><a href="https://jcarme.sru.ac.ir/article_999_208.html" class="accomps-links" target="__blank">Investigation of injection timing and different fuels on the diesel engine performance and emissions</a></li>
+                        <li class="accomps-name"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0360319918304257" class="accomps-links" target="__blank">Simulation of a hydrogen/natural gas engine and modelling of engine operating parameters</a></li>
+                        <li class="accomps-name"><a href="http://www.iust.ac.ir/ijae/article-1-455-en.html" class="accomps-links" target="__blank">Combined effect of ignition and injection timing along with hydrogen enrichment to natural gas in a direct injection engine on performance and exhaust emission</a></li>
+                        <li class="accomps-name"><a href="https://profdoc.um.ac.ir/paper-abstract-1062239.html" class="accomps-links" target="__blank">Effect of Hydrogen on Natural Gas Fueled Direct Injection Engine, a Theoretical Study</a></li>
+                        <li class="accomps-name"><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.999.5680&rep=rep1&type=pdf" class="accomps-links" target="__blank">A review on numerical and experimental results of hydrogen addition to natural gas in internal combustion engines</a></li>
+                        <li class="accomps-name"><a href="https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.657.8235" class="accomps-links" target="__blank">Prediction of Performance a Direct Injection Engine Fueled with Natural gas–Hydrogen Blends</a></li>
+                        <li class="accomps-name"><a href="https://ijhfc.irost.ir/?_action=articleInfo&article=9&vol=1" class="accomps-links" target="__blank">Theoretical study of the effect of hydrogen addition to natural gas-fueled direct-injection engines</a></li>
+                        <li class="accomps-name"><a href="https://profdoc.um.ac.ir/paper-abstract-1062244.html" class="accomps-links" target="__blank">A REVIEW ON EFFECTS OF HYDROGEN ADDITION TO NATURAL GAS IN INTERNAL COMBUSTION ENGINES</a></li>
+                        <li class="accomps-name"><a href="https://link.springer.com/article/10.1007/s12544-013-0099-8" class="accomps-links" target="__blank">Study and the effects of ignition timing on gasoline engine performance and emissions</a></li>
+                        <li class="accomps-name"><a href="https://jcarme.sru.ac.ir/article_51.html" class="accomps-links" target="__blank">Influence of varying timing angle on performance of an SI engine: An experimental and numerical study</a></li>
+                        <li class="accomps-name"><a href="https://www.scientific.net/AMM.165.120" class="accomps-links" target="__blank">Comparing the Effects of Hydrogen Addition on Performance and Exhaust Emission in a Spark Ignition Fueled with Gasoline and CNG</a></li>
+                        <li class="accomps-name"><a href="https://www.hindawi.com/journals/jc/2011/678719/" class="accomps-links" target="__blank">Sensitivity and Effect of Ignition Timing on the Performance of a Spark Ignition Engine: An Experimental and Modeling Study</a></li>
+                        <li class="accomps-name"><a href="https://profdoc.um.ac.ir/paper-abstract-1062242.html" class="accomps-links" target="__blank">a study on heat transfer parameters effect by two zone combustion chamber gasses modeling</a></li>
+                        <li class="accomps-name"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4126923" class="accomps-links" target="__blank">A Simulation Study of Effect of Injector Hole Number Along with Variation of Fuel Injection Pressure in a Gasoline Engine Converted from Port Injection to Direct Injection with Hcng Fuel</a></li>
+                        <li class="accomps-name rtl"><a href="https://jame.um.ac.ir/article_34693.html" class="accomps-links" target="__blank">بررسی تأثیر نسبت تراکم و نوع سوخت بر عملکرد موتور دیزل دارای توربو‌شارژ با نرم‌افزار GT-Power</a></li>
+                        <li class="accomps-name"><a href="http://engineresearch.ir/article-1-710-en.html" class="accomps-links" target="__blank">Numerical study of the effect of fuel injection timing on the ignition delay, performance parameters and exhaust emission of gas/dual fuel diesel engine using Computational Fluid Dynamics</a></li>
+                    </ul>
+                </div>
+                <div class="sub-accomps">
+                    <h2 class="accomps-title">پروژه ها</h2>
+                    <ul class="accomps-list">
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+                    </ul>
+                </div>
+                <div class="sub-accomps">
+                    <h2 class="accomps-title">کتاب ها</h2>
+                    <ul class="accomps-list">
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis modi quaerat tempora facere enim.</a></li>
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis modi quaerat tempora facere enim.</a></li>
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis modi quaerat tempora facere enim.</a></li>
+                        <li class="accomps-name"><a class="accomps-links" target="__blank">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quis modi quaerat tempora facere enim.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer id="foot">
+            <div class="about-us">
+                <div class="contact-us">
+                    <h4>ارتباط با ما</h4>
+                    <ul>
+                        <li class="contact">آدرس:&nbsp; مشهد، میدان آزادی، دانشگاه فردوسی مشهد</li>
+                        <li class="contact">ایمیل:&nbsp; <i style="font-family: myFourthFont-en; font-style: normal;">sup.mechap@gmail.com</i></li>
+                        <li class="contact">تلفن تماس:&nbsp; 5978 723 0912</li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h4>شبکه های اجتماعی</h4>
+                    <ul class="icons">
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-linkedin icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-telegram-plane icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-whatsapp icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-github icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-researchgate icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-twitter icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-facebook-square icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-instagram icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-skype icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-youtube icons-hover"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <span>تمامی حقوق براي این شرکت محفوظ می باشد. &copy;</span>
+            </div>
+        </footer>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/script.js"></script>
+    </body>
+
+    </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="AliApg">
+
+    <meta name="keywords"
+        content="Design Analyze Manufacture Group, Mecha Projects, Mechaprojects, Internal Combustion, Engine, Simulation, Engine Project, Project, CFD, Avl Fire, Solidworks, Ansys, Abaqus, Engineering Project, Javad Zareei, Amirata Yazdani, Kourosh Ghadamkheir,جواد زارعی, امیرعطا یزدانی, کورش قدم خیر">
+
+    <link rel="preload" href="font/Jura-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/PatrickHand-Regular.ttf" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" type="img/png" href="img/logo.png">
+
+    <title>Project order</title>
+</head>
+
+<body>
+    <header class="english">
+        <div class="close"></div>
+        <nav class="main-nav english">
+            <div class="container">
+                <ul class="menu-main english">
+                    <li>
+                        <a href="home_en">Home</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#!">Courses</a>
+                        <div class="menu-sub english">
+                            <div class="menu-col-1 cols english">
+                                <h3 class="menu-category">Mechanic</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">SolidWorks</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Abaqus</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Fire</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Boost</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols english">
+                                <h3 class="menu-category">Computer</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Python</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">HTML</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">CSS</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="project_en">Services</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="menu-col-1 cols english">
+                                <h3 class="menu-category">Design</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Industrial design</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Web design</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols english">
+                                <h3 class="menu-category">Analysis</h3>
+                                <hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Static analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Dynamic analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Fluid analysis</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Combustion analysis</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="accomplishments_en">Accomplishments</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Projects</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Published articles</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a onclick="down()">Contact us</a>
+                        <!--About us-->
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a class="eng" href="team_en" tabindex="-1">Engineering team</a></li>
+                                    <li><a class="eng" href="#foot" tabindex="-1">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="click">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="project_page english">
+        <div class="opener-pic">
+            <div class="project english">
+                <a id="language" class="start english" href="project"></a>
+                <div id="up">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+            <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mdojnabg" method="POST">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Firstname and Lastname" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld">
+                    <label for="telephone">Telephone Number</label>
+                    <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555" required="">
+                    <label for="department">Department</label>
+                    <select name="department" id="department" required="">
+                        <option value="" selected="" disabled="">Select</option>
+                        <option value="Fluids">Fluids</option>
+                        <option value="Solids">Solids</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Combustion">Combustion</option>
+                        <option value="Thesis">Thesis</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="message">Description</label>
+                    <textarea rows="6" name="message" id="message"
+                        placeholder="Description of the requested project"
+                        required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        <footer id="foot" class="english">
+            <div class="about-us">
+                <div class="contact-us english">
+                    <h4>Contact us</h4>
+                    <ul">
+                        <li class="contact">Address: Iran, Mashhad, Azadi square, Ferdowsi University of Mashhad</li>
+                        <li class="contact">Email: sup.mechap@gmail.com</li>
+                        <li class="contact">Office: (+98) 0912 723 5978</li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h4>Socials</h4>
+                    <ul class="icons">
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-linkedin icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-telegram-plane icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-whatsapp icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-github icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-researchgate icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-twitter icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-facebook-square icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-instagram icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-skype icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-youtube icons-hover"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <span>Copyright &copy; All Rights Reserved for this Company.</span>
+            </div>
+        </footer>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

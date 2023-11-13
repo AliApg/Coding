@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="AliApg">
+
+    <meta name="keywords"
+        content="Design Analyze Manufacture Group, Mecha Projects, Mechaprojects, Internal Combustion, Engine, Simulation, Engine Project, Project, CFD, Avl Fire, Solidworks, Ansys, Abaqus, Engineering Project, Javad Zareei, Amirata Yazdani, Kourosh Ghadamkheir,جواد زارعی, امیرعطا یزدانی, کورش قدم خیر">
+
+    <link rel="preload" href="font/NotoNastaliqUrdu-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/Jura-Regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/BNaznnBd.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="font/persian-badkhat.ttf" as="font" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" type="img/png" href="img/logo.png">
+
+    <title>سفارش پروژه</title>
+</head>
+
+<body>
+    <header>
+        <div class="close"></div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="menu-main">
+                    <li>
+                        <a href="../">صفحه اصلی</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#!">دوره ها</a>
+                        <div class="menu-sub">
+                            <div class="menu-col-1 cols">
+                                <h3 class="menu-category">مکانیک</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">SolidWorks</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">Abaqus</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Fire</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">AVL Boost</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols">
+                                <h3 class="menu-category">کامپیوتر</h3><hr>
+                                <ul>
+                                    <li><a class="eng" href="#" tabindex="-1">Python</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">HTML</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">CSS</a></li>
+                                    <li><a class="eng" href="#" tabindex="-1">JavaScript</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li>
+                        <a href="project">سفارش پروژه</a>
+                        <!-- <div class="menu-sub">
+                            <div class="menu-col-1 cols" tabindex="-1">
+                                <h3 class="menu-category" tabindex="-1">طراحی</h3>
+                                <hr>
+                                <ul>
+                                    <li><a href="#" tabindex="-1">طراحی صنعتی</a></li>
+                                    <li><a href="#" tabindex="-1">طراحی سایت</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-col-2 cols">
+                                <h3 class="menu-category">تحلیل</h3>
+                                <hr>
+                                <ul>
+                                    <li><a href="#" tabindex="-1">تحلیل استاتیکی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل دینامیکی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل سیالاتی</a></li>
+                                    <li><a href="#" tabindex="-1">تحلیل احتراق</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="accomplishments">دستاورد ها</a>
+                        <!-- <div class="menu-sub english">
+                            <div class="no-padding cols english menu-col-1">
+                                <ul>
+                                    <li><a href="#" tabindex="-1">پروژه های انجام شده</a></li>
+                                    <li><a href="#" tabindex="-1">مقالات چاپ شده</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a onclick="down()">ارتباط با ما</a>
+                        <!--درباره ما-->
+                        <!-- <div class="menu-sub">
+                            <div class="no-padding cols menu-col-1">
+                                <ul>
+                                    <li><a href="links/team" tabindex="-1">تیم مهندسان</a></li>
+                                    <li><a href="#foot" tabindex="-1">ارتباط با ما</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="click">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="project_page">
+        <div class="opener-pic">
+            <div class="project">
+                <a id="language" class="start" href="project_en"></a>
+                <div id="up">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </div>
+            <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mdojnabg" method="POST">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">نام کامل</label>
+                    <input type="text" name="name" id="full-name" placeholder="نام و نام خانوادگی" required="">
+                    <label for="email-address">ایمیل</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld">
+                    <label for="telephone">شماره تلفن</label>
+                    <input type="telephone" name="telephone" id="telephone" placeholder="555-5555 (555)" required="">
+                    <label for="department">حوزه</label>
+                    <select name="department" id="department" required="">
+                        <option value="" selected="" disabled="">انتخاب کنید</option>
+                        <option value="Fluids">سیالات</option>
+                        <option value="Solids">جامدات</option>
+                        <option value="Agriculture">کشاورزی</option>
+                        <option value="Combustion">احتراق</option>
+                        <option value="Thesis">مشاوره پایان نامه</option>
+                        <option value="Industrial">مشاوره و انجام پروژه صنعتی</option>
+                        <option value="Other">سایر</option>
+                    </select>
+                    <label for="message">توضیحات</label>
+                    <textarea rows="6" name="message" id="message"
+                        placeholder="شرح پروژه درخواستی"
+                        required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="ارسال   پیام">
+            </form>
+        </div>
+        <footer id="foot">
+            <div class="about-us">
+                <div class="contact-us">
+                    <h4>ارتباط با ما</h4>
+                    <ul>
+                        <li class="contact">آدرس:&nbsp; مشهد، میدان آزادی، دانشگاه فردوسی مشهد</li>
+                        <li class="contact">ایمیل:&nbsp; <i style="font-family: myFourthFont-en; font-style: normal;">sup.mechap@gmail.com</i></li>
+                        <li class="contact">تلفن تماس:&nbsp; 5978 723 0912</li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h4>شبکه های اجتماعی</h4>
+                    <ul class="icons">
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-linkedin icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-telegram-plane icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-whatsapp icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-github icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-researchgate icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-twitter icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-facebook-square icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-instagram icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-skype icons-hover"></i></a></li>
+                        <li class="socials-icons"><a class="icon-focus" href="#" target="__blank"><i
+                                    class="fab fa-youtube icons-hover"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <span>تمامی حقوق براي این شرکت محفوظ می باشد. &copy;</span>
+            </div>
+        </footer>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
