@@ -1,0 +1,90 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdc2fa;
+    transition: background-color 1.5s ease-in-out;
+}
+
+.click {
+    --size1: clamp(4rem, 30vw, 18rem);
+    display: flex;
+    overflow: hidden;
+    border-radius: 1em;
+    align-items: center;
+    width: var(--size1);
+    height: var(--size1);
+    background-color: #6998AB;
+    clip-path: circle(70%);
+    justify-content: center;
+    transition: transform 1s ease-in-out,
+                clip-path 1.2s ease-in-out,
+                background-color 1s ease-in-out;
+
+}
+
+.btn1,
+.btn1::before,
+.btn1::after {
+    --size2: clamp(.5em, 4vw, 2.5em);
+    width: 14em;
+    margin: 0 1em;
+    position: relative;
+    height: var(--size2);
+    border-radius: 100vw;
+    transform-origin: center;
+    background-color: #7CD1B8;
+    transition: transform 1.2s ease-in-out,
+                opacity 1.6s ease-in-out,
+                background-color 1s ease-in-out;
+}
+
+.btn1::before,
+.btn1::after {
+    left: -1em;
+    content: '';
+    width: 100%;
+    position: absolute;
+}
+
+.btn1::before {
+    top: calc(var(--size2)*-2);
+}
+
+.btn1::after {
+    top: calc(var(--size2)*2);
+}
+
+body.open {
+    background-color: #6dcfaa;
+}
+
+body.open .click {
+    clip-path: circle(50%);
+    transform: rotate(45deg);
+    background-color: #F4EEA9;
+}
+
+body.open .btn1 {
+    transform: rotate(90deg);
+    background-color: #F05454;
+}
+
+body.open .btn1::before {
+    background-color: #F05454;
+    transform: rotate(270deg) translateX(calc(var(--size2)*-2));
+}
+
+body.open .btn1::after {
+    opacity: 0;
+    background-color: #F05454;
+    transform: rotate(-450deg) translateX(calc(var(--size2)*2));
+}
