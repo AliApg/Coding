@@ -1,0 +1,155 @@
+duration,station_A_id,station_A_name,station_B_id,station_B_name,bike_id,user_type,user_birth_year,user_gender,tire_sizes
+12 minutes,81,Berry St at 4th St,323,Broadway at Kearny,5480,2,1959,Male,25
+17 minutes,3,Powell St BART Station (Market St at 4th St),85,Church St at Duboce Ave,149,3,1984,Male,30
+24 minutes,3,Powell St BART Station (Market St at 4th St),118,Eureka Valley Recreation Center,5193,2,1965,Male,26
+8 minutes,21,Montgomery St BART Station (Market St at 2nd St),61,Howard St at 8th St,157,1,1999,Male,26
+8 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),23,The Embarcadero at Steuart St,3652,3,1993,Male,27
+4 minutes,16,Steuart St at Market St,28,The Embarcadero at Bryant St,1883,1,1979,Male,28
+5 minutes,17,Steuart St at Market St,29,The Embarcadero at Bryant St,1883,1,1979,Male,29
+11 minutes,22,Howard St at Beale St,350,8th St at Brannan St,4626,2,1994,Male,29
+6 minutes,18,Steuart St at Market St,30,The Embarcadero at Bryant St,1883,1,1979,Male,30
+10 minutes,22,Howard St at Beale St,6,The Embarcadero at Sansome St,3279,2,1979,Male,30
+16 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),107,17th St at Dolores St,1035,2,1981,Male,25
+9 minutes,30,San Francisco Caltrain (Townsend St at 4th St),97,14th St at Mission St,5286,2,1991,Male,26
+21 minutes,81,Berry St at 4th St,16,Steuart St at Market St,2124,1,1982,Female,27
+5 minutes,30,San Francisco Caltrain (Townsend St at 4th St),62,Victoria Manalo Draves Park,333,1,1994,Male,28
+6 minutes,3,Powell St BART Station (Market St at 4th St),26,1st St at Folsom St,5331,1,1990,Male,30
+7 minutes,3,Powell St BART Station (Market St at 4th St),27,Beale St at Harrison St,1863,3,1998,Male,25
+187 minutes,15,San Francisco Ferry Building (Harry Bridges Plaza),355,23rd St at Tennessee St,674,2,1987,Female,26
+13 minutes,21,Montgomery St BART Station (Market St at 2nd St),74,Laguna St at Hayes St,5487,2,1997,Male,27
+4 minutes,3,Powell St BART Station (Market St at 4th St),321,5th St at Folsom,1606,2,1995,Male,28
+32 minutes,22,Howard St at Beale St,122,19th St at Mission St,3661,3,1990,Male,29
+5 minutes,22,Howard St at Beale St,11,Davis St at Jackson St,4969,3,1964,Male,30
+16 minutes,16,Steuart St at Market St,42,San Francisco City Hall (Polk St at Grove St),5000,2,2000,Female,25
+17 minutes,16,Steuart St at Market St,42,San Francisco City Hall (Polk St at Grove St),5230,2,2000,Male,26
+16 minutes,16,Steuart St at Market St,58,Market St at 10th St,2033,3,1998,Male,27
+11 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),364,China Basin St at 3rd St,5055,3,1986,Male,28
+10 minutes,5,Powell St BART Station (Market St at 5th St),356,Valencia St at Clinton Park,2165,2,1982,Male,29
+3 minutes,16,Steuart St at Market St,20,Mechanics Monument Plaza (Market St at Bush St),2403,2,1992,Male,30
+11 minutes,3,Powell St BART Station (Market St at 4th St),109,17th St at Valencia St,4980,1,1980,Male,25
+3 minutes,81,Berry St at 4th St,93,4th St at Mission Bay Blvd S,2409,3,1990,Female,26
+12 minutes,15,San Francisco Ferry Building (Harry Bridges Plaza),370,Jones St at Post St,2852,3,1994,Male,27
+7 minutes,3,Powell St BART Station (Market St at 4th St),61,Howard St at 8th St,2459,2,1977,Male,28
+5 minutes,15,San Francisco Ferry Building (Harry Bridges Plaza),6,The Embarcadero at Sansome St,5193,3,1990,Male,29
+6 minutes,81,Berry St at 4th St,116,Mississippi St at 17th St,903,1,1990,Male,30
+6 minutes,21,Montgomery St BART Station (Market St at 2nd St),323,Broadway at Kearny,5218,1,1988,Female,25
+9 minutes,5,Powell St BART Station (Market St at 5th St),15,San Francisco Ferry Building (Harry Bridges Plaza),2177,3,1990,Male,26
+12 minutes,3,Powell St BART Station (Market St at 4th St),102,Irwin St at 8th St,5130,3,1980,Male,27
+16 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),76,McCoppin St at Valencia St,3397,3,1979,Male,28
+17 minutes,68,San Francisco Caltrain Station 2  (Townsend St at 4th St),77,McCoppin St at Valencia St,3397,3,1979,Male,29
+11 minutes,81,Berry St at 4th St,356,Valencia St at Clinton Park,5504,2,1994,Male,29
+11 minutes,3,Powell St BART Station (Market St at 4th St),74,Laguna St at Hayes St,531,2,1988,Male,30
+4 minutes,3,Powell St BART Station (Market St at 4th St),321,5th St at Folsom,3385,2,1990,Female,25
+5 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),50,2nd St at Townsend St,2568,2,1989,Male,26
+6 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),343,Bryant St at 2nd St,2804,1,1966,Male,27
+7 minutes,30,San Francisco Caltrain (Townsend St at 4th St),130,22nd St Caltrain Station,5213,1,1986,Male,28
+4 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),321,5th St at Folsom,1575,1,1988,Male,29
+12 minutes,3,Powell St BART Station (Market St at 4th St),6,The Embarcadero at Sansome St,2899,1,1967,Female,30
+3 minutes,30,San Francisco Caltrain (Townsend St at 4th St),50,2nd St at Townsend St,2960,1,1977,Female,26
+2 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),80,Townsend St at 5th St,2193,2,1996,Female,27
+1 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),64,5th St at Brannan St,2436,2,1990,Female,28
+7 minutes,5,Powell St BART Station (Market St at 5th St),41,Golden Gate Ave at Polk St,3617,2,1989,Male,29
+8 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,626,1,1994,Male,30
+15 minutes,5,Powell St BART Station (Market St at 5th St),4,Cyril Magnin St at Ellis St,4719,1,1973,Male,25
+9 minutes,21,Montgomery St BART Station (Market St at 2nd St),81,Berry St at 4th St,2125,3,1991,Male,26
+11 minutes,21,Montgomery St BART Station (Market St at 2nd St),78,Folsom St at 9th St,5374,2,1999,Female,27
+16 minutes,22,Howard St at Beale St,350,8th St at Brannan St,1310,2,1987,Male,28
+13 minutes,21,Montgomery St BART Station (Market St at 2nd St),78,Folsom St at 9th St,2531,2,1999,Female,29
+14 minutes,21,Montgomery St BART Station (Market St at 2nd St),78,Folsom St at 9th St,1502,2,1998,Female,30
+12 minutes,21,Montgomery St BART Station (Market St at 2nd St),78,Folsom St at 9th St,1202,1,1999,Male,25
+11 minutes,21,Montgomery St BART Station (Market St at 2nd St),78,Folsom St at 9th St,377,2,1999,Male,26
+5 minutes,21,Montgomery St BART Station (Market St at 2nd St),27,Beale St at Harrison St,3711,3,1985,Male,27
+11 minutes,21,Montgomery St BART Station (Market St at 2nd St),61,Howard St at 8th St,2918,2,1999,Female,28
+10 minutes,81,Berry St at 4th St,6,The Embarcadero at Sansome St,5233,1,1987,Male,29
+10 minutes,21,Montgomery St BART Station (Market St at 2nd St),61,Howard St at 8th St,507,2,1998,Male,30
+10 minutes,21,Montgomery St BART Station (Market St at 2nd St),61,Howard St at 8th St,608,1,1999,Male,25
+5 minutes,21,Montgomery St BART Station (Market St at 2nd St),9,Broadway at Battery St,181,2,1967,Male,28
+10 minutes,21,Montgomery St BART Station (Market St at 2nd St),58,Market St at 10th St,3715,2,1999,Male,29
+10 minutes,16,Steuart St at Market St,93,4th St at Mission Bay Blvd S,5392,2,1986,Male,30
+5 minutes,30,San Francisco Caltrain (Townsend St at 4th St),28,The Embarcadero at Bryant St,1012,1,1991,Female,25
+19 minutes,5,Powell St BART Station (Market St at 5th St),70,Central Ave at Fell St,465,2,1989,Male,26
+19 minutes,3,Powell St BART Station (Market St at 4th St),55,Webster St at Grove St,3009,2,1992,Female,27
+20 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),377,Fell St at Stanyan St,5105,1,1992,Male,28
+38 minutes,21,Montgomery St BART Station (Market St at 2nd St),58,Market St at 10th St,5271,2,1988,Male,29
+9 minutes,16,Steuart St at Market St,93,4th St at Mission Bay Blvd S,5125,1,1988,Male,30
+13 minutes,5,Powell St BART Station (Market St at 5th St),370,Jones St at Post St,5373,2,1987,Male,25
+20 minutes,3,Powell St BART Station (Market St at 4th St),6,The Embarcadero at Sansome St,443,1,1985,Female,26
+5 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),90,Townsend St at 7th St,1920,2,1990,Male,27
+11 minutes,21,Montgomery St BART Station (Market St at 2nd St),58,Market St at 10th St,316,2,1999,Female,28
+18 minutes,22,Howard St at Beale St,72,Page St at Scott St,5162,2,1980,Female,29
+9 minutes,21,Montgomery St BART Station (Market St at 2nd St),64,5th St at Brannan St,1299,2,1996,Male,30
+15 minutes,16,Steuart St at Market St,90,Townsend St at 7th St,1547,2,1990,Female,25
+14 minutes,16,Steuart St at Market St,90,Townsend St at 7th St,3309,3,1990,Male,26
+22 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),365,Turk St at Fillmore St,3224,2,1986,Female,27
+3 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),90,Townsend St at 7th St,4799,2,1981,Male,28
+3 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),90,Townsend St at 7th St,4799,2,1981,Male,28
+3 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),90,Townsend St at 7th St,4799,2,1981,Male,28
+4 minutes,3,Powell St BART Station (Market St at 4th St),47,4th St at Harrison St,5458,3,1980,Male,29
+12 minutes,21,Montgomery St BART Station (Market St at 2nd St),67,San Francisco Caltrain Station 2  (Townsend St at 4th St),2568,2,1990,Male,30
+79 minutes,15,San Francisco Ferry Building (Harry Bridges Plaza),323,Broadway at Kearny,2684,1,1987,Male,25
+78 minutes,15,San Francisco Ferry Building (Harry Bridges Plaza),323,Broadway at Kearny,2030,2,1987,Male,26
+80 minutes,15,San Francisco Ferry Building (Harry Bridges Plaza),323,Broadway at Kearny,2086,2,1987,Male,27
+5 minutes,5,Powell St BART Station (Market St at 5th St),62,Victoria Manalo Draves Park,1315,2,1985,Male,28
+6 minutes,81,Berry St at 4th St,130,22nd St Caltrain Station,5224,2,1983,Female,29
+11 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,192,2,2000,Female,30
+7 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,1159,2,1986,Female,25
+7 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,1602,3,1988,Male,26
+22 minutes,21,Montgomery St BART Station (Market St at 2nd St),139,Garfield Square (25th St at Harrison St),4716,1,1975,Male,27
+9 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,1465,1,1999,Female,28
+9 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,685,1,1991,Female,29
+10 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,3109,1,2000,Female,30
+6 minutes,5,Powell St BART Station (Market St at 5th St),88,11th St at Bryant St,4383,2,1985,Male,25
+14 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),370,Jones St at Post St,4960,1,1988,Male,26
+18 minutes,16,Steuart St at Market St,116,Mississippi St at 17th St,5262,1,1989,Female,27
+14 minutes,21,Montgomery St BART Station (Market St at 2nd St),355,23rd St at Tennessee St,4996,1,1994,Male,28
+10 minutes,3,Powell St BART Station (Market St at 4th St),75,Market St at Franklin St,1959,2,1990,Male,30
+11 minutes,3,Powell St BART Station (Market St at 4th St),75,Market St at Franklin St,5222,2,1990,Male,25
+7 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),60,8th St at Ringold St,5047,3,1987,Male,26
+10 minutes,81,Berry St at 4th St,345,Hubbell St at 16th St,2499,2,1988,Male,27
+19 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),52,McAllister St at Baker St,5518,2,1993,Male,28
+19 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),52,McAllister St at Baker St,5518,2,1993,Male,28
+6 minutes,3,Powell St BART Station (Market St at 4th St),16,Steuart St at Market St,955,2,1998,Male,29
+5 minutes,3,Powell St BART Station (Market St at 4th St),16,Steuart St at Market St,593,2,2000,Female,30
+6 minutes,3,Powell St BART Station (Market St at 4th St),16,Steuart St at Market St,1514,2,2000,Male,25
+9 minutes,5,Powell St BART Station (Market St at 5th St),81,Berry St at 4th St,5224,2,1990,Female,26
+8 minutes,5,Powell St BART Station (Market St at 5th St),55,Webster St at Grove St,5528,2,1996,Male,27
+9 minutes,5,Powell St BART Station (Market St at 5th St),76,McCoppin St at Valencia St,4574,2,1977,Male,28
+9 minutes,5,Powell St BART Station (Market St at 5th St),76,McCoppin St at Valencia St,4574,2,1979,Male,28
+9 minutes,5,Powell St BART Station (Market St at 5th St),76,McCoppin St at Valencia St,4574,2,1991,Female,27
+6 minutes,3,Powell St BART Station (Market St at 4th St),58,Market St at 10th St,2152,2,2000,Male,29
+8 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),58,Market St at 10th St,5070,2,1987,Male,30
+19 minutes,3,Powell St BART Station (Market St at 4th St),121,Mission Playground,3491,3,1961,Male,25
+4 minutes,81,Berry St at 4th St,93,4th St at Mission Bay Blvd S,223,1,1988,Male,26
+3 minutes,3,Powell St BART Station (Market St at 4th St),21,Montgomery St BART Station (Market St at 2nd St),2568,2,1988,Male,27
+8 minutes,5,Powell St BART Station (Market St at 5th St),47,4th St at Harrison St,5474,2,1997,Female,28
+3 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),321,5th St at Folsom,5245,1,1989,Male,29
+16 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),112,Harrison St at 17th St,5546,2,1977,Female,25
+20 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),72,Page St at Scott St,1122,3,1979,Male,26
+27 minutes,22,Howard St at Beale St,345,Hubbell St at 16th St,5294,1,1983,Female,27
+5 minutes,21,Montgomery St BART Station (Market St at 2nd St),23,The Embarcadero at Steuart St,4924,2,1992,Male,28
+16 minutes,22,Howard St at Beale St,125,20th St at Bryant St,4942,3,1958,Male,29
+12 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),74,Laguna St at Hayes St,5253,1,1981,Male,30
+10 minutes,81,Berry St at 4th St,321,5th St at Folsom,4832,1,1996,Male,25
+25 minutes,3,Powell St BART Station (Market St at 4th St),134,Valencia St at 24th St,2738,2,1986,Female,26
+9 minutes,5,Powell St BART Station (Market St at 5th St),73,Pierce St at Haight St,4414,3,1995,Female,27
+11 minutes,16,Steuart St at Market St,6,The Embarcadero at Sansome St,5427,1,1969,Male,28
+14 minutes,3,Powell St BART Station (Market St at 4th St),223,16th St Mission BART Station 2,5570,2,1962,Other,30
+14 minutes,3,Powell St BART Station (Market St at 4th St),223,16th St Mission BART Station 2,5328,3,1989,Female,25
+11 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),33,Golden Gate Ave at Hyde St,5571,2,1988,Male,26
+11 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),33,Golden Gate Ave at Hyde St,5571,2,1988,Male,26
+16 minutes,22,Howard St at Beale St,115,Jackson Playground,5332,2,1982,Male,27
+14 minutes,22,Howard St at Beale St,114,Rhode Island St at 17th St,5445,3,1994,Male,29
+10 minutes,16,Steuart St at Market St,92,Mission Bay Kids Park,4413,2,1978,Male,30
+9 minutes,16,Steuart St at Market St,92,Mission Bay Kids Park,5392,3,1988,Male,25
+17 minutes,22,Howard St at Beale St,356,Valencia St at Clinton Park,5325,1,1995,Male,26
+10 minutes,30,San Francisco Caltrain (Townsend St at 4th St),58,Market St at 10th St,5222,3,1995,Male,27
+24 minutes,21,Montgomery St BART Station (Market St at 2nd St),21,Montgomery St BART Station (Market St at 2nd St),5353,1,1965,Male,28
+8 minutes,5,Powell St BART Station (Market St at 5th St),74,Laguna St at Hayes St,4968,2,1993,Female,29
+18 minutes,21,Montgomery St BART Station (Market St at 2nd St),134,Valencia St at 24th St,5485,3,1986,Other,25
+11 minutes,67,San Francisco Caltrain Station 2  (Townsend St at 4th St),9,Broadway at Battery St,4728,3,1991,Female,27
+14 minutes,5,Powell St BART Station (Market St at 5th St),126,Esprit Park,1338,1,1984,Male,28
+13 minutes,21,Montgomery St BART Station (Market St at 2nd St),86,Market St at Dolores St,4426,1,1987,Male,29
+7 minutes,16,Steuart St at Market St,10,Washington St at Kearny St,3554,2,1989,Male,25
+7 minutes,17,Steuart St at Market St,11,Washington St at Kearny St,3554,2,1989,Male,26
+7 minutes,18,Steuart St at Market St,12,Washington St at Kearny St,3554,2,1989,Male,27
+8 minutes,19,Steuart St at Market St,13,Washington St at Kearny St,3554,2,1989,Male,28
