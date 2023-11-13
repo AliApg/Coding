@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Welcome to scopusScrap’s documentation! &#8212; scopusScrap 0.001 documentation</title>
+  <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+  <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+  <script src="_static/documentation_options.js?v=3f5bfe19"></script>
+  <script src="_static/doctools.js?v=888ff710"></script>
+  <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+
+  <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+</head>
+
+<body>
+
+
+  <div class="document">
+    <div class="documentwrapper">
+      <div class="bodywrapper">
+
+
+        <div class="body" role="main">
+
+          <section id="welcome-to-scopusscrap-s-documentation">
+            <h1>Welcome to scopusScrap’s documentation!<a class="headerlink"
+                href="#welcome-to-scopusscrap-s-documentation" title="Link to this heading">¶</a></h1>
+            <div class="toctree-wrapper compound">
+            </div>
+          </section>
+          <section id="indices-and-tables">
+            <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a>
+            </h1>
+            <ul class="simple">
+              <li>
+                <p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p>
+              </li>
+              <li>
+                <p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module
+                      Index</span></a></p>
+              </li>
+              <li>
+                <p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p>
+              </li>
+            </ul>
+          </section>
+          <section id="module-scopusUtils">
+            <span id="scopusutils-module"></span>
+            <h1>scopusUtils Module<a class="headerlink" href="#module-scopusUtils" title="Link to this heading">¶</a>
+            </h1>
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.analyze_dataset">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">analyze_dataset</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">subset_columns</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span
+                        class="pre">[</span></span><span class="pre">str</span><span class="p"><span
+                        class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">download_folder_directory</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">missing_values_handling</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span
+                        class="pre">'all'</span></span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="s"><span class="pre">'any'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">show_stat</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span
+                    class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span
+                      class="pre">float</span></span></span><a class="headerlink" href="#scopusUtils.analyze_dataset"
+                  title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Analyze datasets in subfolders and calculate the percentage of missing values in specified columns.
+                </p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>subset_columns (List[str]): A list of column names to check for missing values.
+                      download_folder_directory (str | None): Path to the directory containing the datasets.</p>
+                    <blockquote>
+                      <div>
+                        <p>If None, defaults to ‘Download’ folder in the current working directory.</p>
+                      </div>
+                    </blockquote>
+                    <dl class="simple">
+                      <dt>missing_values_handling (Literal[‘all’, ‘any’]): Determines how missing values are handled.
+                      </dt>
+                      <dd>
+                        <ul class="simple">
+                          <li>
+                            <p>‘all’: Drops rows only if all specified columns have missing values.</p>
+                          </li>
+                          <li>
+                            <p>‘any’: Drops rows if any of the specified columns have missing values. (Default is
+                              ‘all’).</p>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <p>verbose (bool): If True, displays detailed information about each file processed. Default is
+                      False.
+                      show_stat (bool): If True, displays the summary statistics after analyzing the datasets. Default
+                      is True.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>float: The percentage of missing values in the specified columns across all datasets.</p>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>ValueError: If any file is not a CSV or encounters other parsing errors.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">analyze_dataset</span><span class="p">([</span><span class="s1">&#39;Column1&#39;</span><span class="p">,</span> <span class="s1">&#39;Column2&#39;</span><span class="p">],</span> <span class="n">missing_values_handling</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">)</span>
+<span class="go"># Analyzes datasets in subfolders, checks for missing values in &#39;Column1&#39; and &#39;Column2&#39;,</span>
+<span class="go"># and displays the percentage of missing values in those columns across all datasets.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.color_code">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">color_code</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em
+                  class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink"
+                  href="#scopusUtils.color_code" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Display a message with specified color in Jupyter Notebook based on a given condition.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>condition (bool): A boolean condition. If True, the message will be displayed in green; if False,
+                      in red.
+                      message (str): The message to be displayed.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None: This function does not return any value; it displays the formatted message in the specified
+                      color.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">color_code</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;Condition is met!&quot;</span><span class="p">)</span>
+<span class="go"># Displays &quot;Condition is met!&quot; in green color.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">color_code</span><span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;Condition not satisfied.&quot;</span><span class="p">)</span>
+<span class="go"># Displays &quot;Condition not satisfied.&quot; in red color.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.convert_csv_to_bibtex">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">convert_csv_to_bibtex</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">csv_file</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em
+                  class="sig-param"><span class="n"><span class="pre">output_file</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">bib_id</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'EID'</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink"
+                  href="#scopusUtils.convert_csv_to_bibtex" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Read a CSV file containing bibliographic identifiers (e.g., EID) and other fields,
+                  and convert it to BibTeX entries. Write the BibTeX entries to a .bib file.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>csv_file (str): Path to the input CSV file.
+                      output_file (str): Path to (name of) the output .bib file.
+                      bib_id (str, optional): Column name containing bibliographic identifiers. Default is ‘EID’.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">convert_csv_to_bibtex</span><span class="p">(</span><span class="s2">&quot;scopus_test.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;output.bib&quot;</span><span class="p">)</span>
+<span class="go"># Reads the input CSV file, generates BibTeX entries using &#39;EID&#39; as identifiers,</span>
+<span class="go"># and writes them to the output .bib file.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.get_bib_file_row_count">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">get_bib_file_row_count</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">str</span></span></em><span
+                  class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span>
+                  <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink"
+                  href="#scopusUtils.get_bib_file_row_count" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Get the number of BibTeX entries in a .bib file.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>file_path (str): Path to the .bib file.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>int: Number of BibTeX entries in the file.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_bib_file_row_count</span><span class="p">(</span><span class="s2">&quot;output.bib&quot;</span><span class="p">)</span>
+<span class="go"># Returns the number of BibTeX entries in the specified .bib file.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.log">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">log</span></span><span class="sig-paren">(</span><em
+                  class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink"
+                  href="#scopusUtils.log" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Formats and logs a message along with the current date and time.</p>
+                <dl>
+                  <dt>Parameters:</dt>
+                  <dd>
+                    <p>message (str): The message to be logged.
+                      length (int, optional): The total length of the log entry.</p>
+                    <blockquote>
+                      <div>
+                        <p>Defaults to 50 characters if not provided.</p>
+                      </div>
+                    </blockquote>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Processing completed successfully&quot;</span><span class="p">)</span>
+<span class="go">&#39;Processing completed successfully           2023-10-18 15:30:45&#39;</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.merge_csv_to_bib_per_folder">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">merge_csv_to_bib_per_folder</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">input_folder</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em
+                  class="sig-param"><span class="n"><span class="pre">bib_id</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'EID'</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink"
+                  href="#scopusUtils.merge_csv_to_bib_per_folder" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Merge all CSV files in separate folders to individual BibTeX .bib files within each folder.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>input_folder (str): Path to the folder containing folders with CSV files.
+                      bib_id (str): Column name containing unique identifiers (Default is ‘EID’).</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">merge_csv_to_bib_per_folder</span><span class="p">(</span><span class="s2">&quot;input_folder&quot;</span><span class="p">)</span>
+<span class="go"># Merges all CSV files in separate folders within &#39;input_folder&#39;,</span>
+<span class="go"># generates BibTeX entries, and writes them to .bib files in respective folders.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.query_formatter">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">query_formatter</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">input_str</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">str</span></span></em><span
+                  class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span>
+                  <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink"
+                  href="#scopusUtils.query_formatter" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Format a search query string for use in Scopus API requests.</p>
+                <p>This function takes an input search query string and performs formatting to make it
+                  suitable for use in Scopus API requests. It converts the input string to lowercase,
+                  replaces specific characters, and ensures proper use of boolean operators.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>input_str (str): The input search query string to be formatted.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>str: The formatted search query string.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">formatted_query</span> <span class="o">=</span> <span class="n">query_formatter</span><span class="p">(</span><span class="s1">&#39;machine learning AND neural networks&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">formatted_query</span><span class="p">)</span>
+<span class="go">&#39;machine+learning+neural+networks&#39;</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Notes:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>The function converts the input query to lowercase to ensure case-insensitive
+                          searching.</p>
+                      </li>
+                      <li>
+                        <p>It replaces ‘and’, ‘or’, ‘not’, ‘+’, ‘-’, and ‘~’ with the appropriate boolean
+                          operators (‘AND’, ‘OR’, ‘NOT’) for Scopus API queries.</p>
+                      </li>
+                      <li>
+                        <p>Multiple spaces are replaced with a single space, and the query is joined
+                          using ‘+’ to represent spaces in the final formatted query.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>See Also:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>For Scopus API usage, you can use the formatted query as a parameter in API
+                          requests to retrieve specific data.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusUtils.time_formatter">
+                <span class="sig-prename descclassname"><span class="pre">scopusUtils.</span></span><span
+                  class="sig-name descname"><span class="pre">time_formatter</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">start_time</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">float</span></span></em><span
+                  class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span>
+                  <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink"
+                  href="#scopusUtils.time_formatter" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Calculates the elapsed time since a specified start time and
+                  returns a formatted string representing the elapsed time in hours, minutes, and seconds.</p>
+                <dl>
+                  <dt>Parameters:</dt>
+                  <dd>
+                    <p>start_time (float): The start time, represented as a float value returned by time.time().</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>str: A string representing the elapsed time in the format ‘HHh MMm SSs’.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Simulating a task that takes 5 seconds</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">elapsed_time</span> <span class="o">=</span> <span class="n">time_formatter</span><span class="p">(</span><span class="n">start_time</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Operation completed in </span><span class="si">{</span><span class="n">elapsed_time</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="go">&#39;Operation completed in 00h 00m 05s&#39;</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+          </section>
+          <section id="module-scopusLogin">
+            <span id="scopuslogin-module"></span>
+            <h1>scopusLogin Module<a class="headerlink" href="#module-scopusLogin" title="Link to this heading">¶</a>
+            </h1>
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusLogin.login">
+                <span class="sig-prename descclassname"><span class="pre">scopusLogin.</span></span><span
+                  class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><em
+                  class="sig-param"><span class="n"><span class="pre">user_name</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'sut402&#64;yopmail.com'</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">pass_word</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'biblio402&#64;SUT'</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">headless</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">clear_cash</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">False</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span
+                        class="pre">[</span></span><span class="pre">bool</span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span
+                      class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w">
+                    </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span
+                      class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span
+                      class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span
+                      class="pre">dict</span><span class="p"><span class="pre">[</span></span><span
+                      class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">bool</span><span
+                      class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span
+                      class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a
+                  class="headerlink" href="#scopusLogin.login" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>This function logs in to the Scopus website using the provided username, password, and a random user
+                  agent.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>user_name (str): Your Scopus account username. Default is <a class="reference external"
+                        href="mailto:'sut402&#37;&#52;&#48;yopmail&#46;com">‘sut402<span>&#64;</span>yopmail<span>&#46;</span>com</a>’.
+                      pass_word (str): Your Scopus account password. Default is <a class="reference external"
+                        href="mailto:'biblio402&#37;&#52;&#48;SUT">‘biblio402<span>&#64;</span>SUT</a>’.
+                      headless (bool): If True, the browser will run in headless mode (without a graphical interface).
+                      Default is True.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <dl class="simple">
+                      <dt>Tuple[bool, str, list[dict[str, str | bool]], str, str]:</dt>
+                      <dd>
+                        <ul class="simple">
+                          <li>
+                            <p>A tuple containing a boolean indicating whether the login was successful (True) or not
+                              (False).</p>
+                          </li>
+                          <li>
+                            <p>The page title after login.</p>
+                          </li>
+                          <li>
+                            <p>List of Selenium cookies.</p>
+                          </li>
+                          <li>
+                            <p>User data directory path used for the Chrome browser.</p>
+                          </li>
+                          <li>
+                            <p>User agent string used in the browser.</p>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>TimeoutException: If certain elements on the Scopus website are not found within the specified
+                      time limit.</p>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <p>Set your Scopus account username and password in the ‘user_name’ and ‘pass_word’ function
+                      arguments when calling this function, or use the default values.
+                      After calling this function, check the return value to verify if the login was successful.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="p">()</span>
+<span class="go">(True, &#39;Scopus - Document search | Signed in&#39;, [&lt;selenium cookie objects&gt;], &#39;path/to/user-data-dir&#39;, &#39;user-agent-string&#39;)</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+          </section>
+          <section id="module-scopusSearch">
+            <span id="scopussearch-module"></span>
+            <h1>scopusSearch Module<a class="headerlink" href="#module-scopusSearch" title="Link to this heading">¶</a>
+            </h1>
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusSearch.click_all_checkboxes">
+                <span class="sig-prename descclassname"><span class="pre">scopusSearch.</span></span><span
+                  class="sig-name descname"><span class="pre">click_all_checkboxes</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">driver_object</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">start_at</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em
+                  class="sig-param"><span class="n"><span class="pre">end_at</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">file_format_int</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">int</span></span></em><span
+                  class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span>
+                  <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink"
+                  href="#scopusSearch.click_all_checkboxes" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Selects all checkboxes within a specified range of search results using the provided WebDriver
+                  instance.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>driver_object (WebDriver): The Selenium WebDriver instance used for interacting with the web
+                      page.
+                      start_at (str): The starting point of the range of search results.
+                      end_at (str): The ending point of the range of search results.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function automates the process of selecting all checkboxes within a specified range of
+                      search results
+                      on Scopus search page. It locates the export button, selects the option to export all results,
+                      sets the specified range of search results (from start_at to end_at), finds all checkboxes,
+                      and clicks on each of them. Finally, it clicks the export button to confirm the selection.</p>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <p>driver = webdriver.Chrome() # Initialize a Chrome WebDriver instance
+                      click_all_checkboxes(driver, “1”, “100”)
+                      # All checkboxes within the range of 1 to 100 will be selected.</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">click_all_checkboxes</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;50&quot;</span><span class="p">)</span>
+<span class="go"># All checkboxes within the range of 1 to 50 will be selected.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusSearch.scopus_search">
+                <span class="sig-prename descclassname"><span class="pre">scopusSearch.</span></span><span
+                  class="sig-name descname"><span class="pre">scopus_search</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">queries_location</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'Queries.txt'</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">file_format</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span
+                        class="pre">[</span></span><span class="s"><span class="pre">'CSV'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'RIS'</span></span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="s"><span class="pre">'BibTeX'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'Plain</span> <span class="pre">text'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'CSV'</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">search_within</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span
+                        class="pre">[</span></span><span class="s"><span class="pre">'ALL'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'TITLE_ABS_KEY'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'AUTHOR_NAME'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'FIRSTAUTH'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'SRCTITLE'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'TITLE'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'ABS'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'KEY'</span></span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="s"><span class="pre">'AFFIL'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'AFFILORG'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'AFFILCITY'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'AFFILCOUNTRY'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'FUND_ALL'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'FUND_SPONSOR'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'FUND_ACR'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'FUND_NO'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'LANGUAGE'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'ISSN'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'CODEN'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'DOI'</span></span><span class="p"><span class="pre">,</span></span><span class="w">
+                    </span><span class="s"><span class="pre">'REF'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'CONF'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'TITLE_ABS_KEY_AUTH'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'CHEMNAME'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'CASREGNUMBER'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'ORCID'</span></span><span class="p"><span class="pre">]</span></span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">'ALL'</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">export_interval</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">int</span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">timeout_time</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">number_of_allowed_retries</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">int</span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">dynamic_timeout</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">multiplier</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">headless_login</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">first</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span
+                    class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span
+                      class="pre">None</span></span></span><a class="headerlink" href="#scopusSearch.scopus_search"
+                  title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Automates the process of searching and exporting data from Scopus based on specified queries and
+                  parameters.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>queries_location (str): Path to the file containing search queries. Defaults to ‘Queries.txt’.
+                      file_format (str): File format for exported data (e.g., ‘csv’). Defaults to ‘csv’.
+                      search_within (str): Search category or filter parameter. Defaults to ‘ALL’.
+                      export_interval (int): Number of search results per export segment. Defaults to 500.
+                      timeout_time (float): Timeout duration for each export segment in seconds. Defaults to 300 seconds
+                      (5 minutes).
+                      number_of_allowed_retries (int): Number of allowed retries for failed exports. Defaults to 3.
+                      dynamic_timeout (bool): Whether to dynamically adjust the timeout based on export duration.
+                      Defaults to True.
+                      multiplier (int): Multiplier used for dynamic timeout calculation. Defaults to 3.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function automates the process of searching for specified queries on Scopus, exporting the
+                      search results
+                      in segments, and organizing the exported data into separate folders. It utilizes Selenium
+                      WebDriver for
+                      interacting with the Scopus website, exporting data, and handling errors during the export
+                      process.</p>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <dl class="simple">
+                      <dt>scopus_search(queries_location=’queries.txt’, file_format=’csv’, search_within=’ALL’,</dt>
+                      <dd>
+                        <p>export_interval=500, timeout_time=300, number_of_allowed_retries=3,
+                          dynamic_timeout=True, multiplier=3)</p>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scopus_search</span><span class="p">(</span><span class="n">queries_location</span><span class="o">=</span><span class="s1">&#39;queries.txt&#39;</span><span class="p">,</span> <span class="n">file_format</span><span class="o">=</span><span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="n">search_within</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">,</span>
+<span class="go">                  export_interval=500, timeout_time=300, number_of_allowed_retries=3,</span>
+<span class="go">                  dynamic_timeout=True, multiplier=3)</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusSearch.search_queries">
+                <span class="sig-prename descclassname"><span class="pre">scopusSearch.</span></span><span
+                  class="sig-name descname"><span class="pre">search_queries</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">driver_object</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">search_within_param</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink"
+                  href="#scopusSearch.search_queries" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Searches for a specified query within a specified search category using the provided WebDriver
+                  instance.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>driver_object (WebDriver): The Selenium WebDriver instance used for performing the search.
+                      search_within_param (str): The search category or filter parameter.
+                      query (str): The search query to be entered.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>int: The number of search results obtained after the search operation.</p>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>TimeoutException: If the search results are not found within the specified time limit.</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function automates the process of performing a search operation on Scopus web page using
+                      Selenium WebDriver.
+                      It locates the search category dropdown, enters the search category, clears the search input
+                      field,
+                      enters the search query, clicks the search button, waits for the search results to load,
+                      and then extracts and returns the number of search results as an integer.</p>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <p>driver = webdriver.Chrome() # Initialize a Chrome WebDriver instance
+                      num_results = search_queries(driver, “Category”, “Search Query”)
+                      print(f”Number of search results: {num_results}”)</p>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">num_results</span> <span class="o">=</span> <span class="n">search_queries</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="s2">&quot;Books&quot;</span><span class="p">,</span> <span class="s2">&quot;ALL&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of search results: </span><span class="si">{</span><span class="n">num_results</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="go">Number of search results: 3500</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusSearch.set_chrome_options">
+                <span class="sig-prename descclassname"><span class="pre">scopusSearch.</span></span><span
+                  class="sig-name descname"><span class="pre">set_chrome_options</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">user_data_directory</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span
+                    class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span
+                      class="pre">Options</span></span></span><a class="headerlink"
+                  href="#scopusSearch.set_chrome_options" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>s
+                  Configures Chrome options for Selenium WebDriver with specific settings.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>user_data_dir (str): The path to the user data directory for the Chrome browser.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>selenium.webdriver.chrome.options.Options: Configured Chrome options for WebDriver.</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function sets up Chrome options for the Selenium WebDriver with several customizations,
+                      including user data directory, disabling browser features, setting download preferences, and
+                      enabling headless mode.</p>
+                    <p>The following options are applied:
+                      - Disables certain Blink features controlled by Automation.
+                      - Excludes switches for enabling automation.
+                      - Disables browser extensions.
+                      - Sets the user data directory for Chrome.
+                      - Maximizes the browser window.
+                      - Enables headless mode for running without a graphical interface.
+                      - Disables GPU usage for headless mode.
+                      - Disables sandboxing.
+                      - Disables shared memory usage for the renderer processes.
+                      - Configures download preferences to avoid download prompts and upgrade downloads.</p>
+                  </dd>
+                </dl>
+                <p># Use the configured WebDriver for automation tasks.</p>
+                <dl>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">user_data_dir</span> <span class="o">=</span> <span class="s2">&quot;/path/to/user-data-directory&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chrome_options</span> <span class="o">=</span> <span class="n">set_chrome_options</span><span class="p">(</span><span class="n">user_data_dir</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">chrome_options</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.example.com&quot;</span><span class="p">)</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+          </section>
+          <section id="module-scopusAPI">
+            <span id="scopusapi-module"></span>
+            <h1>scopusAPI Module<a class="headerlink" href="#module-scopusAPI" title="Link to this heading">¶</a></h1>
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusAPI.get_abstract">
+                <span class="sig-prename descclassname"><span class="pre">scopusAPI.</span></span><span
+                  class="sig-name descname"><span class="pre">get_abstract</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">signed_in</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'0a8e79cfa41aeded29d60f49ab30d67c'</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">accept</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span
+                        class="pre">'image/jpeg'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'application/json'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'text/xml'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'application/xml'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'text/html'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'application/json'</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink"
+                  href="#scopusAPI.get_abstract" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p># Dont use this function
+                  Retrieve the abstract text from a given URL using web scraping.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>url (str): The URL of the webpage containing the abstract.
+                      signed_in (bool): A boolean indicating whether the user is signed in to access the full abstract
+                      content.
+                      api_key (str, optional): API key for authentication. Defaults to a sample API key.
+                      accept (Literal[‘image/jpeg’, ‘application/json’, ‘text/xml’, ‘application/xml’, ‘text/html’],
+                      optional):</p>
+                    <blockquote>
+                      <div>
+                        <p>The type of content accepted in the response. Defaults to ‘application/json’.</p>
+                      </div>
+                    </blockquote>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>str: Extracted abstract text from the webpage.</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function performs a GET request to the provided URL, including necessary headers and API key
+                      if provided.
+                      It then parses the HTML content using BeautifulSoup and extracts the abstract text based on the
+                      provided HTML
+                      structure. If the user is signed in, the function looks for the abstract within a specific
+                      section; otherwise,
+                      it uses a different section. The extracted abstract text is returned as a string.</p>
+                  </dd>
+                  <dt>Note:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Ensure that the provided URL contains the necessary HTML structure for abstract extraction.
+                        </p>
+                      </li>
+                      <li>
+                        <p>The ‘accept’ parameter specifies the format of the response. The default value is
+                          ‘application/json’.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Args Examples:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">abstract_text</span> <span class="o">=</span> <span class="n">get_abstract</span><span class="p">(</span><span class="s1">&#39;https://example.com/abstract&#39;</span><span class="p">,</span> <span class="n">signed_in</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstract_text</span> <span class="o">=</span> <span class="n">get_abstract</span><span class="p">(</span><span class="s1">&#39;https://example.com/abstract&#39;</span><span class="p">,</span> <span class="n">signed_in</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_api_key&#39;</span><span class="p">)</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Call this function with the target URL and sign-in status to extract the abstract text from
+                          the webpage.</p>
+                      </li>
+                      <li>
+                        <p>Ensure the appropriate HTML structure for abstract extraction is present on the provided URL.
+                        </p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>This function may raise exceptions related to network issues, timeouts, or incorrect HTML
+                      structure.</p>
+                  </dd>
+                  <dt>See Also:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>BeautifulSoup documentation: <a class="reference external"
+                            href="https://www.crummy.com/software/BeautifulSoup/">https://www.crummy.com/software/BeautifulSoup/</a>
+                        </p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">abstract_text</span> <span class="o">=</span> <span class="n">get_abstract</span><span class="p">(</span><span class="s1">&#39;https://example.com/article123&#39;</span><span class="p">,</span> <span class="n">signed_in</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">abstract_text</span><span class="p">)</span>
+<span class="go">&quot;This is the extracted abstract text from the provided URL.&quot;</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusAPI.get_cited_by">
+                <span class="sig-prename descclassname"><span class="pre">scopusAPI.</span></span><span
+                  class="sig-name descname"><span class="pre">get_cited_by</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">signed_in</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'0a8e79cfa41aeded29d60f49ab30d67c'</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">accept</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span
+                        class="pre">'image/jpeg'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'application/json'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'text/xml'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'application/json'</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink"
+                  href="#scopusAPI.get_cited_by" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p># Dont use this function
+                  Retrieve information about articles cited by the provided URL using web scraping.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>url (str): The URL of the webpage containing the cited by information.
+                      signed_in (bool): A boolean indicating whether the user is signed in to access the full cited by
+                      information.
+                      api_key (str, optional): API key for authentication. Defaults to a sample API key.
+                      accept (Literal[‘image/jpeg’, ‘application/json’, ‘text/xml’], optional):</p>
+                    <blockquote>
+                      <div>
+                        <p>The type of content accepted in the response. Defaults to ‘application/json’.</p>
+                      </div>
+                    </blockquote>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>list: List of dictionaries containing information about articles cited by the provided URL.</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function performs a GET request to the provided URL, including necessary headers and API key
+                      if provided.
+                      It then parses the HTML content using BeautifulSoup and extracts the cited by information from the
+                      table.
+                      If the user is signed in, the function extracts data from a specific table; otherwise, it uses a
+                      different table.
+                      The extracted information is returned as a list of dictionaries, where each dictionary represents
+                      a row of
+                      cited by data with column names as keys.</p>
+                  </dd>
+                  <dt>Note:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Ensure that the provided URL contains the necessary HTML structure for cited by information
+                          extraction.</p>
+                      </li>
+                      <li>
+                        <p>The ‘accept’ parameter specifies the format of the response. The default value is
+                          ‘application/json’.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Args Examples:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cited_by_info</span> <span class="o">=</span> <span class="n">get_cited_by</span><span class="p">(</span><span class="s1">&#39;https://example.com/article123&#39;</span><span class="p">,</span> <span class="n">signed_in</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cited_by_info</span> <span class="o">=</span> <span class="n">get_cited_by</span><span class="p">(</span><span class="s1">&#39;https://example.com/article123&#39;</span><span class="p">,</span> <span class="n">signed_in</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_api_key&#39;</span><span class="p">)</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Call this function with the target URL and sign-in status to extract information about
+                          articles cited by
+                          the provided URL.</p>
+                      </li>
+                      <li>
+                        <p>Ensure the appropriate HTML structure for cited by information extraction is present on the
+                          provided URL.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>This function may raise exceptions related to network issues, timeouts, or incorrect HTML
+                      structure.</p>
+                  </dd>
+                  <dt>See Also:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>BeautifulSoup documentation: <a class="reference external"
+                            href="https://www.crummy.com/software/BeautifulSoup/">https://www.crummy.com/software/BeautifulSoup/</a>
+                        </p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cited_by_info</span> <span class="o">=</span> <span class="n">get_cited_by</span><span class="p">(</span><span class="s1">&#39;https://example.com/article123&#39;</span><span class="p">,</span> <span class="n">signed_in</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">cited_by_info</span><span class="p">)</span>
+<span class="go">[</span>
+<span class="go">    {&#39;Title&#39;: &#39;Article Title 1&#39;, &#39;Authors&#39;: &#39;Author 1&#39;, &#39;Year&#39;: &#39;2022&#39;, &#39;Journal&#39;: &#39;Journal Name 1&#39;},</span>
+<span class="go">    {&#39;Title&#39;: &#39;Article Title 2&#39;, &#39;Authors&#39;: &#39;Author 2&#39;, &#39;Year&#39;: &#39;2021&#39;, &#39;Journal&#39;: &#39;Journal Name 2&#39;},</span>
+<span class="go">    ...</span>
+<span class="go">]</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusAPI.process_search_results">
+                <span class="sig-prename descclassname"><span class="pre">scopusAPI.</span></span><span
+                  class="sig-name descname"><span class="pre">process_search_results</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">List</span><span class="p"><span
+                        class="pre">[</span></span><span class="pre">Any</span><span class="p"><span
+                        class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">include_abstract</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">include_cited_by</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">signed_in</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'0a8e79cfa41aeded29d60f49ab30d67c'</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">accept</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span
+                        class="pre">'image/jpeg'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'application/json'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'text/xml'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'application/json'</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">List</span><span class="p"><span
+                        class="pre">[</span></span><span class="pre">List</span><span class="p"><span
+                        class="pre">[</span></span><span class="pre">Any</span><span class="p"><span
+                        class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a
+                  class="headerlink" href="#scopusAPI.process_search_results" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p># Dont use this function
+                  Process search results from a Scopus API query and extract abstract and/or cited by information from
+                  the results.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>results (List[Any]): List of search results obtained from the Scopus API.
+                      include_abstract (bool): If True, extract abstract information. Defaults to True.
+                      include_cited_by (bool): If True, extract cited by information. Defaults to True.
+                      signed_in (bool): A boolean indicating whether the user is signed in to access the full
+                      abstract/cited by info.
+                      api_key (str, optional): API key for authentication. Required if ‘signed_in’ is True.
+                      accept (str or List[str], optional): The type of content accepted in the response. Defaults to
+                      ‘application/json’.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>List[List[Any]]: A list of lists containing extracted data (abstract, cited by info) for each
+                      search result entry.</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function processes the search results obtained from the Scopus API. For each search result
+                      entry, it checks
+                      if the entry has ‘citedby-count’ and, if present, extracts abstract and/or cited by information
+                      based on the
+                      provided arguments. The extracted data is organized into lists and returned as a list of lists.
+                    </p>
+                  </dd>
+                  <dt>Note:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Ensure that the API responses contain the necessary fields for abstract and cited by
+                          information extraction.</p>
+                      </li>
+                      <li>
+                        <p>The ‘accept’ parameter specifies the format of the response. Defaults to ‘application/json’.
+                        </p>
+                      </li>
+                      <li>
+                        <p>If ‘signed_in’ is True, an ‘api_key’ must be provided for authentication.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Args Examples:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search_results</span> <span class="o">=</span> <span class="p">[</span><span class="o">...</span><span class="n">list</span> <span class="n">of</span> <span class="n">Scopus</span> <span class="n">search</span> <span class="n">results</span><span class="o">...</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">processed_data</span> <span class="o">=</span> <span class="n">process_search_results</span><span class="p">(</span><span class="n">search_results</span><span class="p">,</span> <span class="n">include_abstract</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_cited_by</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>                                         <span class="n">signed_in</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_api_key&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">processed_data</span> <span class="o">=</span> <span class="n">process_search_results</span><span class="p">(</span><span class="n">search_results</span><span class="p">,</span> <span class="n">include_abstract</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">include_cited_by</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>                                         <span class="n">signed_in</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Call this function with the obtained search results to extract abstract and/or cited by
+                          information based on
+                          the specified parameters.</p>
+                      </li>
+                      <li>
+                        <p>Extracted data is returned as a list of lists, where each inner list contains data for a
+                          search result entry.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>ValueError: If ‘signed_in’ is True but ‘api_key’ is not provided.</p>
+                  </dd>
+                  <dt>See Also:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Scopus API documentation: <a class="reference external"
+                            href="https://dev.elsevier.com/sc_apis.html">https://dev.elsevier.com/sc_apis.html</a></p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search_results</span> <span class="o">=</span> <span class="p">[</span><span class="o">...</span><span class="n">list</span> <span class="n">of</span> <span class="n">Scopus</span> <span class="n">search</span> <span class="n">results</span><span class="o">...</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">processed_data</span> <span class="o">=</span> <span class="n">process_search_results</span><span class="p">(</span><span class="n">search_results</span><span class="p">,</span> <span class="n">include_abstract</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">include_cited_by</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>                                         <span class="n">signed_in</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;your_api_key&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">processed_data</span><span class="p">)</span>
+<span class="go">[</span>
+<span class="go">    [&#39;Abstract 1&#39;, &#39;Cited by Info 1&#39;],</span>
+<span class="go">    [&#39;Abstract 2&#39;, &#39;Cited by Info 2&#39;],</span>
+<span class="go">    ...</span>
+<span class="go">]</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="scopusAPI.scopus_apis">
+                <span class="sig-prename descclassname"><span class="pre">scopusAPI.</span></span><span
+                  class="sig-name descname"><span class="pre">scopus_apis</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">api_link</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span
+                        class="pre">'authenticate'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'abstract_citation_count'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'citation_overview'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'serial_title'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'serial_title_issn'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'subject_classifications_scidir'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'subject_classifications_scopus'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'abstract_retrieval_scopus_id'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'abstract_retrieval_eid'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'abstract_retrieval_doi'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'abstract_retrieval_pii'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'abstract_retrieval_pubmed_id'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'abstract_retrieval_pui'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'affiliation_retrieval_affiliation_id'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'affiliation_retrieval_eid'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'author_retrieval'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'author_retrieval_author_id'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'author_retrieval_eid'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'author_retrieval_orcid'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'affiliation_search'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'author_search'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'scopus_search'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'plumx_metrics'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'scopus_search'</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'0a8e79cfa41aeded29d60f49ab30d67c'</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">requirement</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">parameters</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">dict</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span
+                    class="n"><span class="pre">show_result</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">bool</span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">reformat_query</span></span><span class="p"><span class="pre">:</span></span><span
+                    class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span
+                    class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span
+                      class="pre">accept</span></span><span class="p"><span class="pre">:</span></span><span class="w">
+                  </span><span class="n"><span class="pre">Literal</span><span class="p"><span
+                        class="pre">[</span></span><span class="s"><span class="pre">'image/jpeg'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'application/json'</span></span><span class="p"><span
+                        class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'text/xml'</span></span><span class="p"><span class="pre">,</span></span><span
+                      class="w"> </span><span class="s"><span class="pre">'application/xml'</span></span><span
+                      class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span
+                        class="pre">'text/html'</span></span><span class="p"><span
+                        class="pre">]</span></span></span><span class="w"> </span><span class="o"><span
+                      class="pre">=</span></span><span class="w"> </span><span class="default_value"><span
+                      class="pre">'application/json'</span></span></em><span class="sig-paren">)</span> <span
+                  class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">Response</span></span></span><a class="headerlink"
+                  href="#scopusAPI.scopus_apis" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Retrieve data from various APIs based on the provided API name or URL.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <p>query (str, None): Additional query parameters for the API request.</p>
+                    <dl class="simple">
+                      <dt>api_link (str): The API name or URL to fetch data from. It should be a string</dt>
+                      <dd>
+                        <p>representing either a valid API name from the list of available APIs or
+                          a complete API URL. Default is ‘scopus_search’.</p>
+                      </dd>
+                    </dl>
+                    <p>requirement (str, None): Additional requirement for the API request.</p>
+                    <p>parameters (dict): Filter parameters.</p>
+                    <p>show_result (bool): Whether to print the API response. Default is True.</p>
+                    <p>reformat_query (bool): Whether to reform query into the right format.</p>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>requests.Response: The response object from the API request.</p>
+                  </dd>
+                  <dt>Examples:</dt>
+                  <dd>
+                    <p>To retrieve data from the Scopus search API, use:
+                      &gt;&gt;&gt; scopus_apis(‘scopus_search’)</p>
+                    <p>To retrieve data from a custom API with a specific URL, use:
+                      &gt;&gt;&gt; scopus_apis(’<a class="reference external"
+                        href="https://customapi.example.com/data">https://customapi.example.com/data</a>’)</p>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <dl class="simple">
+                      <dt>ValueError: If the provided <cite>api_link</cite> is not a string or is not a valid</dt>
+                      <dd>
+                        <p>API name. Also, raises a ValueError if the API requires an argument
+                          (<cite>requirement</cite>) but it’s not provided.</p>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>Notes:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>The function supports multiple APIs, and you can extend the list of APIs and
+                          their corresponding URLs in the <cite>APIS</cite> dictionary.</p>
+                      </li>
+                      <li>
+                        <p>Ensure that the provided API name is one of the keys in the <cite>APIS</cite> dictionary
+                          to fetch data from the correct source.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+          </section>
+          <section id="module-citedBySearch">
+            <span id="citedbysearch-module"></span>
+            <h1>citedBySearch Module<a class="headerlink" href="#module-citedBySearch"
+                title="Link to this heading">¶</a></h1>
+            <dl class="py function">
+              <dt class="sig sig-object py" id="citedBySearch.search_cited_by">
+                <span class="sig-prename descclassname"><span class="pre">citedBySearch.</span></span><span
+                  class="sig-name descname"><span class="pre">search_cited_by</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">download_folder_directory</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a
+                  class="headerlink" href="#citedBySearch.search_cited_by" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Documentation</p>
+              </dd>
+            </dl>
+
+          </section>
+          <section id="module-referenceDOI">
+            <span id="referencedoi-module"></span>
+            <h1>referenceDOI Module<a class="headerlink" href="#module-referenceDOI" title="Link to this heading">¶</a>
+            </h1>
+            <dl class="py function">
+              <dt class="sig sig-object py" id="referenceDOI.by_article_doi">
+                <span class="sig-prename descclassname"><span class="pre">referenceDOI.</span></span><span
+                  class="sig-name descname"><span class="pre">by_article_doi</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">download_folder_directory</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span>
+                <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink"
+                  href="#referenceDOI.by_article_doi" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Search for DOI (Digital Object Identifier) information for articles based on their DOIs mentioned in
+                  CSV files.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <dl class="simple">
+                      <dt>download_folder_directory (str, optional): Path to the download folder. If provided, changes
+                        the current</dt>
+                      <dd>
+                        <p>working directory to this path. If None, checks if the current working directory ends with
+                          ‘Download’,
+                          if not, sets the current working directory to ‘Download’. Defaults to None.</p>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function processes CSV files within specified folders, extracts DOIs from the ‘DOI’ column,
+                      queries the
+                      Crossref API to get reference DOIs for each article, and adds new columns ‘References DOI all’,
+                      ‘Actual number
+                      of references’, ‘Found references’, and ‘Unfound references’ to the CSV files containing DOI
+                      information. The
+                      processed files are saved with a ‘<a href="#id1"><span class="problematic"
+                          id="id2">DOI_search_</span></a>’ prefix in the same folder.</p>
+                  </dd>
+                  <dt>Note:</dt>
+                  <dd>
+                    <p>The Crossref API (crossref-python) is used to retrieve DOI information. Ensure you have
+                      appropriate
+                      access and rate limits are respected when using the API.</p>
+                  </dd>
+                  <dt>Args Examples:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">by_article_doi</span><span class="p">()</span>  <span class="c1"># Searches for DOI information in the &#39;Download&#39; folder.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">by_article_doi</span><span class="p">(</span><span class="s1">&#39;custom_folder&#39;</span><span class="p">)</span>  <span class="c1"># Searches for DOI information in the &#39;custom_folder&#39; directory.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Call this function to process CSV files within specified folders, extract DOIs, and retrieve
+                          DOI
+                          information for the articles mentioned in the ‘DOI’ column of the CSV files.</p>
+                      </li>
+                      <li>
+                        <p>The processed CSV files are saved in the same folder with a ‘<a href="#id3"><span
+                              class="problematic" id="id4">DOI_search_</span></a>’ prefix.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>This function does not raise any specific exceptions.</p>
+                  </dd>
+                  <dt>See Also:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Crossref API documentation: <a class="reference external"
+                            href="https://github.com/fabiobatalha/crossrefapi">https://github.com/fabiobatalha/crossrefapi</a>
+                        </p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">by_article_doi</span><span class="p">(</span><span class="s1">&#39;Data/ResearchPapers&#39;</span><span class="p">)</span>  <span class="c1"># Processes CSV files in &#39;Data/ResearchPapers&#39; folder.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">by_article_doi</span><span class="p">()</span>  <span class="c1"># Processes CSV files in the &#39;Download&#39; folder.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+            <dl class="py function">
+              <dt class="sig sig-object py" id="referenceDOI.by_reference_title">
+                <span class="sig-prename descclassname"><span class="pre">referenceDOI.</span></span><span
+                  class="sig-name descname"><span class="pre">by_reference_title</span></span><span
+                  class="sig-paren">(</span><em class="sig-param"><span class="n"><span
+                      class="pre">download_folder_directory</span></span><span class="p"><span
+                      class="pre">:</span></span><span class="w"> </span><span class="n"><span
+                      class="pre">str</span><span class="w"> </span><span class="p"><span
+                        class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span
+                    class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span
+                    class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span>
+                <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span
+                    class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink"
+                  href="#referenceDOI.by_reference_title" title="Link to this definition">¶</a>
+              </dt>
+              <dd>
+                <p>Search for DOI (Digital Object Identifier) information based on references in CSV files.</p>
+                <dl>
+                  <dt>Args:</dt>
+                  <dd>
+                    <dl class="simple">
+                      <dt>download_folder_directory (str, optional): Path to the download folder. If provided, changes
+                        the current</dt>
+                      <dd>
+                        <p>working directory to this path. If None, checks if the current working directory ends with
+                          ‘Download’,
+                          if not, sets the current working directory to ‘Download’. Defaults to None.</p>
+                      </dd>
+                    </dl>
+                  </dd>
+                  <dt>Returns:</dt>
+                  <dd>
+                    <p>None</p>
+                  </dd>
+                  <dt>Description:</dt>
+                  <dd>
+                    <p>This function searches for DOI information in CSV files within specified folders. It reads CSV
+                      files,
+                      processes the ‘References’ column, queries the Crossref API to get DOI information for each
+                      reference,
+                      and adds a new column ‘References DOI’ to the CSV files containing DOI information. The processed
+                      files
+                      are saved with a ‘<a href="#id5"><span class="problematic" id="id6">DOI_</span></a>’ prefix in the
+                      same folder.</p>
+                  </dd>
+                  <dt>Note:</dt>
+                  <dd>
+                    <p>The Crossref API (crossref-python) is used to retrieve DOI information. Ensure you have
+                      appropriate
+                      access and rate limits are respected when using the API.</p>
+                  </dd>
+                  <dt>Args Examples:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">by_reference_title</span><span class="p">()</span>  <span class="c1"># Searches for DOI information in the &#39;Download&#39; folder.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">by_reference_title</span><span class="p">(</span><span class="s1">&#39;custom_folder&#39;</span><span class="p">)</span>  <span class="c1"># Searches for DOI information in the &#39;custom_folder&#39; directory.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Usage:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Call this function to process CSV files within specified folders and retrieve DOI information
+                          for the references mentioned in the ‘References’ column of the CSV files.</p>
+                      </li>
+                      <li>
+                        <p>The processed CSV files are saved in the same folder with a ‘<a href="#id7"><span
+                              class="problematic" id="id8">DOI_</span></a>’ prefix.</p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Raises:</dt>
+                  <dd>
+                    <p>This function does not raise any specific exceptions.</p>
+                  </dd>
+                  <dt>See Also:</dt>
+                  <dd>
+                    <ul class="simple">
+                      <li>
+                        <p>Crossref API documentation: <a class="reference external"
+                            href="https://github.com/fabiobatalha/crossrefapi">https://github.com/fabiobatalha/crossrefapi</a>
+                        </p>
+                      </li>
+                    </ul>
+                  </dd>
+                  <dt>Example:</dt>
+                  <dd>
+                    <div class="doctest highlight-default notranslate">
+                      <div class="highlight">
+                        <pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">by_reference_title</span><span class="p">(</span><span class="s1">&#39;Data/ResearchPapers&#39;</span><span class="p">)</span>  <span class="c1"># Processes CSV files in &#39;Data/ResearchPapers&#39; folder.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">by_reference_title</span><span class="p">()</span>  <span class="c1"># Processes CSV files in the &#39;Download&#39; folder.</span>
+</pre>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </dd>
+            </dl>
+
+          </section>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebarwrapper">
+        <h1 class="logo"><a href="#">scopusScrap</a></h1>
+
+
+
+
+
+
+
+
+        <h3>Navigation</h3>
+
+        <div class="relations">
+          <h3>Related Topics</h3>
+          <ul>
+            <li><a href="#">Documentation overview</a>
+              <ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="searchbox" style="display: none" role="search">
+          <h3 id="searchlabel">Quick search</h3>
+          <div class="searchformwrapper">
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off"
+                autocapitalize="off" spellcheck="false" />
+              <input type="submit" value="Go" />
+            </form>
+          </div>
+        </div>
+        <script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <div class="clearer"></div>
+  </div>
+  <div class="footer">
+    &copy;2023, AliAPG.
+
+    |
+    Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+    &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+
+    |
+    <a href="_sources/index.rst.txt" rel="nofollow">Page source</a>
+  </div>
+
+
+
+
+</body>
+
+</html>
