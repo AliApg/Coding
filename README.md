@@ -1,2 +1,2 @@
 # Coding
-My coding projects
+My coding journey!
