@@ -1,0 +1,5 @@
+a=input("Enter first name: ")
+b=input("Enter second name: ")
+print("\nYour team\n-----------------------")
+print("1)Hello "+a)
+print("2)Hello "+b)
